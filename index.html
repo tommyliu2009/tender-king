@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>標案王｜台灣政府標案搜尋</title>
+<meta name="description" content="標案王：彙整政府電子採購網招標與決標公告，快速搜尋標案、機關、得標廠商，掌握即將截標案件。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📋</text></svg>">
+<link rel="stylesheet" href="style.css?v=202610110238">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="brand"><span class="logo">📋</span><span>標案王--仁禾管理顧問</span></div>
+    <h1>台灣政府標案搜尋</h1>
+    <p class="sub">彙整政府電子採購網招標、決標公告，搜尋案名、機關或得標廠商，每筆附原始公告連結。</p>
+    <div class="bignum">共收錄 <b id="grandTotal">—</b> 件標案<span class="bignum-sub" id="range"></span></div>
+    <div class="tabs" id="tabs"><button class="tab on" data-m="search">標案搜尋</button><button class="tab" data-m="soon">即將截標</button><button class="tab" data-m="vendor">廠商得標紀錄</button></div>
+    <div class="searchbar">
+      <input id="q" type="search" placeholder="搜尋案名、機關或廠商（例：道路改善、資訊系統、臺中市政府）" autocomplete="off" enterkeyhint="search">
+      <button id="qBtn" type="button" class="qbtn">搜尋</button>
+    </div>
+    <div class="stats" id="stats"></div>
+  </div>
+</header>
+<main class="wrap layout">
+  <aside class="filters" id="filters">
+    <div class="fhead"><h2>篩選條件</h2><button class="link" id="reset">清除全部</button></div>
+    <div class="fgroup"><h3>狀態</h3><div class="chips single" data-key="st"></div></div>
+    <div class="fgroup"><h3>類別</h3><div class="chips single" data-key="cat"></div></div>
+    <div class="fgroup"><h3>預算金額</h3><div class="chips single" data-key="amt"></div></div>
+    <div class="fgroup"><h3>截標日</h3><div class="chips single" data-key="dl"></div></div>
+    <div class="fgroup"><h3>縣市</h3><select id="city"><option value="">全部縣市</option></select></div>
+    <div class="fgroup"><h3>機關</h3><input type="text" id="unit" list="units" placeholder="輸入機關名稱"><datalist id="units"></datalist></div>
+    <button class="btn primary only-mobile" id="applyFilters">查看結果</button>
+    <div class="ad">
+      <div class="ad-tag">補助、標案、商業模式顧問</div>
+      <div class="ad-name">仁禾管理顧問<br>劉靜渡</div>
+      <div class="ad-contact"><a href="mailto:tommyliu2009@gmail.com">tommyliu2009@gmail.com</a><br>LINE ID：tommyliu2009</div>
+    </div>
+    <div class="counter">訪客人次<br><img src="https://visitor-badge.laobi.icu/badge?page_id=tommyliu2009.tender-king&left_text=%E8%A8%AA%E5%AE%A2&left_color=%23d2691e&right_color=%23f08a24" alt="訪客計數器"></div>
+  </aside>
+  <section class="results">
+    <div class="toolbar">
+      <button class="btn only-mobile" id="openFilters">⚙ 篩選</button>
+      <span id="count" class="count"></span>
+    </div>
+    <div id="hint" class="hint"></div>
+    <div id="list" class="list"></div>
+    <button class="btn more" id="more" hidden>載入更多</button>
+    <div id="empty" class="empty" hidden>找不到符合條件的標案，試試其他關鍵字或放寬篩選。</div>
+  </section>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p>資料最後更新：<b id="updated">—</b>（台北時間）</p>
+    <p class="muted">資料來源：政府電子採購網（web.pcc.gov.tw），經 pcc-api.openfun.app 開放 API 取得。預算、截標日、決標金額僅收錄近期案件明細；實際內容以採購網原始公告為準。</p>
+  </div>
+</footer>
+<script src="app.js?v=202610110238"></script>
+</body>
+</html>
