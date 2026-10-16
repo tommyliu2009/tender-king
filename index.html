@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>標案王｜台灣政府標案搜尋</title>
+<meta name="description" content="標案王：彙整政府電子採購網招標與決標公告，快速搜尋標案、機關、得標廠商，掌握即將截標案件。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📋</text></svg>">
+<link rel="stylesheet" href="style.css?v=202610170147">
+
+<!--GEO-->
+<link rel="canonical" href="https://www.bidking.tw/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="標案王">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:title" content="標案王｜台灣政府標案搜尋">
+<meta property="og:description" content="標案王：彙整政府電子採購網招標與決標公告，快速搜尋標案、機關、得標廠商，掌握即將截標案件。">
+<meta property="og:url" content="https://www.bidking.tw/">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="標案王｜台灣政府標案搜尋"><meta name="twitter:description" content="標案王：彙整政府電子採購網招標與決標公告，快速搜尋標案、機關、得標廠商，掌握即將截標案件。">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.bidking.tw/#org","name":"仁禾管理顧問","url":"https://www.bidking.tw/","email":"tommyliu2009@gmail.com","founder":{"@type":"Person","name":"劉靜渡"},"contactPoint":{"@type":"ContactPoint","contactType":"customer service","email":"tommyliu2009@gmail.com","availableLanguage":["zh-TW"]},"sameAs":["https://line.me/ti/p/~tommyliu2009"]},{"@type":"WebSite","@id":"https://www.bidking.tw/#website","url":"https://www.bidking.tw/","name":"標案王","description":"標案王彙整政府電子採購網招標與決標公告，收錄 2024 年起 559,003 件完整標案與 2020–2023 年回溯摘要，可依案名、機關、縣市、預算與得標廠商搜尋，並提供競爭對手分析、決標價比、週期標案預告與關鍵字電子報。","inLanguage":"zh-Hant-TW","publisher":{"@id":"https://www.bidking.tw/#org"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.bidking.tw/?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"CollectionPage","@id":"https://www.bidking.tw/#webpage","url":"https://www.bidking.tw/","name":"標案王｜台灣政府標案搜尋","description":"標案王：彙整政府電子採購網招標與決標公告，快速搜尋標案、機關、得標廠商，掌握即將截標案件。","inLanguage":"zh-Hant-TW","isPartOf":{"@id":"https://www.bidking.tw/#website"},"publisher":{"@id":"https://www.bidking.tw/#org"},"dateModified":"2026-10-17T01:47+08:00","mainEntity":{"@id":"https://www.bidking.tw/#dataset"}},{"@type":"Dataset","@id":"https://www.bidking.tw/#dataset","name":"標案王｜台灣政府標案搜尋","description":"標案王：彙整政府電子採購網招標與決標公告，快速搜尋標案、機關、得標廠商，掌握即將截標案件。 資料來源：政府電子採購網開放資料，由標案王整理。","url":"https://www.bidking.tw/","inLanguage":"zh-Hant-TW","creator":{"@id":"https://www.bidking.tw/#org"},"publisher":{"@id":"https://www.bidking.tw/#org"},"dateModified":"2026-10-17T01:47+08:00","temporalCoverage":"2020-01-01/..","spatialCoverage":{"@type":"Place","name":"臺灣"},"isBasedOn":"https://web.pcc.gov.tw/","license":"https://data.gov.tw/license","isAccessibleForFree":true,"keywords":["政府標案","政府採購","招標公告","決標公告","臺灣"]}]}</script><!--/GEO-->
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="brand"><span class="logo">📋</span><span>標案王--仁禾管理顧問</span></div>
+    <h1>台灣政府標案搜尋</h1>
+    <p class="sub">彙整政府電子採購網招標、決標公告，搜尋案名、機關、投標或得標廠商，每筆附原始公告連結。</p>
+    <div class="bignum">共收錄 <b id="grandTotal">—</b> 件標案<span class="bignum-sub" id="range"></span></div>
+    <div class="tabs" id="tabs"><button class="tab on" data-m="search">標案搜尋</button><button class="tab" data-m="soon">即將截標</button><button class="tab" data-m="vendor">廠商投標／得標紀錄</button></div>
+    <div class="searchbar">
+      <input id="q" type="search" placeholder="搜尋案名、機關或廠商（例：道路改善、資訊系統、臺中市政府）" autocomplete="off" enterkeyhint="search">
+      <button id="qBtn" type="button" class="qbtn">搜尋</button>
+    </div>
+    <div class="stats" id="stats"></div>
+    <nav class="cats" style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;font-size:14px"><b style="color:#d2691e">新功能：</b><a href="/rival.html">🥊 競爭對手分析</a><a href="/nobid.html">♻️ 無法決標專區</a><a href="/subscribe.html">📧 關鍵字訂閱</a><a href="/rank.html">🏆 機關發包排行</a><a href="/small.html">💼 小額接案專區</a><a href="/company.html">🏢 統編公司檔案</a><a href="/ratio.html">📊 決標價比</a><a href="/cycle.html">🔁 週期標案預告</a></nav>
+    <nav class="cats" style="margin-top:6px;display:flex;flex-wrap:wrap;gap:8px;font-size:14px"><b style="color:#d2691e">分類瀏覽：</b><a href="/browse.html#地區">地區</a><a href="/b/1m-10m.html">預算</a><a href="/browse.html#熱門關鍵字">關鍵字</a><a href="/browse.html#機關">機關</a><a href="/browse.html">廠商／每日公告</a><a href="/k/%E6%AE%AF%E8%91%AC.html">殯葬</a><a href="/k/%E6%B8%85%E6%BD%94.html">清潔</a><a href="/k/%E8%B3%87%E8%A8%8A.html">資訊</a><a href="/k/%E5%A7%94%E8%A8%97%E7%A0%94%E7%A9%B6.html">委託研究</a></nav>
+  </div>
+</header>
+<style>.mad{display:none}@media (max-width:860px){.mad{display:block;margin:10px 12px 0;padding:7px 10px;border:2px solid #f08a24;border-radius:10px;background:#fff7ee;text-align:center;line-height:1.45;font-size:.82rem}.mad b{color:#d2691e}.mad a{color:#d2691e;word-break:break-all}}</style>
+<div class="mad" id="mobileAd"><b>補助、標案、商業模式顧問｜仁禾管理顧問 劉靜渡</b><br><a href="mailto:tommyliu2009@gmail.com">tommyliu2009@gmail.com</a>｜<a href="https://line.me/ti/p/~tommyliu2009" target="_blank" rel="noopener">LINE ID：tommyliu2009</a></div>
+<!--GEOSUM--><section class="geo-sum" aria-label="重點摘要" style="max-width:1100px;margin:12px auto 0;padding:10px 16px;background:#fffdf7;border-left:4px solid #f08a24;font-size:14px;line-height:1.7;color:#333;box-sizing:border-box"><b>重點摘要：</b>標案王收錄 2024 年起 <b>559,003</b> 件政府標案（2024/01/02–2026/10/16），目前招標中 <b>6,506</b> 件、已決標 454,640 件、無法決標 43,555 件，另有 2020–2023 年回溯摘要。資料更新：2026-10-17 01:47（台北時間）｜來源：政府電子採購網開放資料｜維護：仁禾管理顧問 劉靜渡。<details style="margin-top:6px"><summary>近期即將截止投標的標案（靜態清單 30 件）</summary><ul><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTQ0Nzk" rel="nofollow noopener" target="_blank">教學大樓東側三樓、四樓廁所整修工程</a>｜嘉義縣立東石國民中學｜預算 142 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTQyMTE" rel="nofollow noopener" target="_blank">花蓮縣光復國中115學年度住宿生早、晚餐勞務採購。</a>｜花蓮縣立光復國民中學｜預算 83 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/prkms/tender/common/noticeDate/redirectPublic?ds=20261016&amp;fn=TIQ-4-71117976.xml" rel="nofollow noopener" target="_blank">「鐵道工程碳管理輔導及永續發展推動工作」委託專業服務</a>｜交通部鐵道局｜預算 2,883 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/prkms/tender/common/noticeDate/redirectPublic?ds=20261016&amp;fn=TIQ-4-71124905.xml" rel="nofollow noopener" target="_blank">Paradigm震測資料處理軟體維護服務</a>｜台灣中油股份有限公司｜預算 1,000 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTU2Mzc" rel="nofollow noopener" target="_blank">電力電容等2項採購</a>｜臺北大眾捷運股份有限公司｜預算 —｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNDMxODQ" rel="nofollow noopener" target="_blank">臺南市中西區成功國小115年度廣場活動式車阻設置財物採購</a>｜臺南市中西區成功國民小學｜預算 35 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTQ4NjE" rel="nofollow noopener" target="_blank">115年度巴西地毯草種子採購</a>｜屏東縣高樹鄉公所｜預算 32 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTQ0MDc" rel="nofollow noopener" target="_blank">慣性阻力評估訓練儀1組</a>｜國立臺灣大學｜預算 28 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTQxNzE" rel="nofollow noopener" target="_blank">12導程心電圖機 1組</a>｜國立臺灣大學｜預算 28 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNDY1MjA" rel="nofollow noopener" target="_blank">116年新建風雨球場工程委託規劃設計監造技術服務</a>｜澎湖縣七美鄉七美國民小學｜預算 86 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTI0MTM" rel="nofollow noopener" target="_blank">臺南市白河地政事務所耐震補強工程</a>｜臺南市白河地政事務所｜預算 829 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTI4MDY" rel="nofollow noopener" target="_blank">野銀部落聚會所興建工程</a>｜臺東縣蘭嶼鄉公所｜預算 3,326 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNDA5MTU" rel="nofollow noopener" target="_blank">各系統裝備閥檢修委商</a>｜國防部海軍司令部｜預算 444 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTI3MjM" rel="nofollow noopener" target="_blank">115年4月豪雨(G1)-西湖鄉下埔村、湖東村、金獅村、龍洞村等4件野溪護岸災後復建工程</a>｜苗栗縣西湖鄉公所｜預算 199 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTM1Mzg" rel="nofollow noopener" target="_blank">115年援贈拉美及加海地區兩友邦食米1,548公噸海運委外案</a>｜外交部｜預算 2,855 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTM5MjI" rel="nofollow noopener" target="_blank">W滑行道瀝青道面搶修更新案</a>｜國防部空軍司令部｜預算 1,197 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTM5MDk" rel="nofollow noopener" target="_blank">115年度「基質輔助雷射脫附游離飛行時間質譜儀」</a>｜衛生福利部食品藥物管理署｜預算 990 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTI3MTE" rel="nofollow noopener" target="_blank">115年度大湖鄉鄉道養護計畫(加強鄉道養護作業)</a>｜苗栗縣大湖鄉公所｜預算 50 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTM2NDU" rel="nofollow noopener" target="_blank">嘉義縣民雄國中「114-116年公立國民中小學老舊廁所整修工程」</a>｜嘉義縣立民雄國民中學｜預算 799 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTMxNzY" rel="nofollow noopener" target="_blank">減震液壓缸採購</a>｜臺北大眾捷運股份有限公司｜預算 —｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTMwMzM" rel="nofollow noopener" target="_blank">正興國中正德樓磁磚攔網架設工程</a>｜高雄市立正興國民中學｜預算 50 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTM3MTk" rel="nofollow noopener" target="_blank">3D 列印機乙項</a>｜國防部海軍司令部｜預算 40 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTIxMjE" rel="nofollow noopener" target="_blank">大林廠第二氫氣工場反應器保溫更新工作</a>｜台灣中油股份有限公司｜預算 623 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTI3Nzg" rel="nofollow noopener" target="_blank">東山區下南勢段鹿寮溪上游農塘改善工程</a>｜農業部農村發展及水土保持署臺南分署｜預算 1,309 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTI4NjE" rel="nofollow noopener" target="_blank">&quot;德國&quot;委丹扎注射劑常備藥品(開口契約)</a>｜屏東榮民總醫院｜預算 1,183 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTI5Mzc" rel="nofollow noopener" target="_blank">【115年琉球鄉漁福村龍蝦洞及上福村天聖宮周邊環境改善工程】</a>｜屏東縣琉球鄉公所｜預算 2,039 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTI2NjA" rel="nofollow noopener" target="_blank">楠西區照興里王萊宅段168-52及429地號、183-13地號、68地號、明雄農路擋土牆改善工程等4件</a>｜臺南市楠西區公所｜預算 436 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTI3NzU" rel="nofollow noopener" target="_blank">115年度進階型遙控無人多旋翼機採購案</a>｜苗栗縣警察局｜預算 43 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTMxOTQ" rel="nofollow noopener" target="_blank">血中含氧濃度測定儀(掌上型)35台</a>｜國立臺灣大學醫學院附設醫院｜預算 80 萬｜截止 2026/10/19</li><li><a href="https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTIzNjY" rel="nofollow noopener" target="_blank">戲曲樓消防設備汰換採購案</a>｜國立臺灣戲曲學院｜預算 449 萬｜截止 2026/10/19</li></ul></details><div style="margin-top:4px">功能：<a href="/rival.html">競爭對手分析</a>、<a href="/nobid.html">無法決標專區</a>、<a href="/subscribe.html">關鍵字訂閱電子報</a>、<a href="/rank.html">機關發包排行與年度趨勢</a>、<a href="/small.html">小額接案專區</a>、<a href="/company.html">統編公司檔案</a>、<a href="/ratio.html">決標價比分析</a>、<a href="/cycle.html">週期標案預告</a>、<a href="/browse.html">分類瀏覽</a>、<a href="/faq.html">常見問答</a>、<a href="/about.html">關於</a></div></section><!--/GEOSUM--><main class="wrap layout">
+  <aside class="filters" id="filters">
+    <div class="fhead"><h2>篩選條件</h2><button class="link" id="reset">清除全部</button></div>
+    <div class="fgroup"><h3>狀態</h3><div class="chips single" data-key="st"></div></div>
+    <div class="fgroup"><h3>類別</h3><div class="chips single" data-key="cat"></div></div>
+    <div class="fgroup"><h3>預算金額</h3><div class="chips single" data-key="amt"></div></div>
+    <div class="fgroup"><h3>截標日</h3><div class="chips single" data-key="dl"></div></div>
+    <div class="fgroup"><h3>縣市</h3><select id="city"><option value="">全部縣市</option></select></div>
+    <div class="fgroup"><h3>機關</h3><input type="text" id="unit" list="units" placeholder="輸入機關名稱"><datalist id="units"></datalist></div>
+    <button class="btn primary only-mobile" id="applyFilters">查看結果</button>
+    <div class="ad">
+      <div class="ad-tag">補助、標案、商業模式顧問</div>
+      <div class="ad-name">仁禾管理顧問<br>劉靜渡</div>
+      <div class="ad-contact"><a href="mailto:tommyliu2009@gmail.com">tommyliu2009@gmail.com</a><br>LINE ID：tommyliu2009</div>
+    </div>
+    <div class="counter">訪客人次<br><img src="https://visitor-badge.laobi.icu/badge?page_id=tommyliu2009.tender-king&left_text=%E8%A8%AA%E5%AE%A2&left_color=%23d2691e&right_color=%23f08a24" alt="訪客計數器"></div>
+  </aside>
+  <section class="results">
+    <div class="toolbar">
+      <button class="btn only-mobile" id="openFilters">⚙ 篩選</button>
+      <span id="count" class="count"></span><button class="btn" id="xl" type="button" style="margin-left:auto">匯出 Excel</button>
+    </div>
+    <div id="hint" class="hint"></div>
+    <div id="vbox" class="vbox"></div>
+    <div id="list" class="list"></div>
+    <button class="btn more" id="more" hidden>載入更多</button>
+    <div id="empty" class="empty" hidden>找不到符合條件的標案，試試其他關鍵字或放寬篩選。</div>
+  </section>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p>資料最後更新：<b id="updated">—</b>（台北時間）</p>
+    <p class="muted">資料來源：政府電子採購網（web.pcc.gov.tw），經 pcc-api.openfun.app 開放 API 取得。預算、截標日、決標金額僅收錄近期案件明細；實際內容以採購網原始公告為準。</p>
+  </div>
+</footer>
+<script src="export.js?v=202610170147"></script>
+<script src="app.js?v=202610170147"></script>
+</body>
+</html>

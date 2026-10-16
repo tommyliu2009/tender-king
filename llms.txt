@@ -1,0 +1,27 @@
+# 標案王（bidking.tw）
+> 標案王彙整政府電子採購網招標與決標公告，收錄 2024 年起 559,003 件完整標案與 2020–2023 年回溯摘要，可依案名、機關、縣市、預算與得標廠商搜尋，並提供競爭對手分析、決標價比、週期標案預告與關鍵字電子報。
+
+維護者：仁禾管理顧問 劉靜渡（tommyliu2009@gmail.com，LINE ID：tommyliu2009）。資料來源：政府電子採購網（web.pcc.gov.tw，經 pcc-api.openfun.app 開放 API 取得）。最近更新：2026-10-17 01:47（台北時間）。
+
+## 主要功能
+- [標案搜尋](https://www.bidking.tw/)：搜尋 2024 年起所有招標、決標公告，可依案名、機關、投標或得標廠商查詢，每筆附原始公告連結。
+- [競爭對手分析](https://www.bidking.tw/rival.html)：輸入廠商名稱或統編，查詢主要競爭對手、同場投標次數、勝負與雙方皆得標紀錄。
+- [無法決標專區](https://www.bidking.tw/nobid.html)：整理流標、廢標等無法決標的案件，常會重新招標，是可提前準備的商機。
+- [關鍵字訂閱電子報](https://www.bidking.tw/subscribe.html)：輸入 Email 與關鍵字，平日早上收到符合的新標案，可選縣市，隨時取消。
+- [機關發包排行與年度趨勢](https://www.bidking.tw/rank.html)：2020 年起各機關發包件數排行與 2024 年起決標金額排行。
+- [小額接案專區](https://www.bidking.tw/small.html)：預算 50–300 萬元、招標中的設計、影音、活動、網站維護案。
+- [統編公司檔案](https://www.bidking.tw/company.html)：用統一編號或公司名稱查投標、得標實績、常往來機關，並推薦適合投的標案。
+- [決標價比分析](https://www.bidking.tw/ratio.html)：決標金額占預算比例，依機關、類別、預算區間統計，協助評估報價。
+- [週期標案預告](https://www.bidking.tw/cycle.html)：依歷年同機關同名案的發包月份，預告未來 60 天可能出現的週期性標案。
+- [分類瀏覽](https://www.bidking.tw/browse.html)：依地區、預算級距、關鍵字、機關、廠商、日期瀏覽標案。
+
+## 說明
+- [常見問答](https://www.bidking.tw/faq.html)
+- [關於標案王與資料來源](https://www.bidking.tw/about.html)
+- [完整說明（llms-full.txt）](https://www.bidking.tw/llms-full.txt)
+- [網站地圖](https://www.bidking.tw/sitemap.xml)
+
+## 分類頁
+- 關鍵字頁 181 個：https://www.bidking.tw/k/<關鍵字>.html，例如 [資訊](https://www.bidking.tw/k/%E8%B3%87%E8%A8%8A.html)
+- 機關頁 400 個：https://www.bidking.tw/u/<機關>.html
+- 縣市頁 23 個、預算級距頁 6 個、每日公告頁 45 個、廠商頁 500 個
