@@ -1,0 +1,887 @@
+# 標案王（bidking.tw）
+> 標案王彙整政府電子採購網招標與決標公告，收錄 2024 年起 560,613 件完整標案與 2020–2023 年回溯摘要，可依案名、機關、縣市、預算與得標廠商搜尋，並提供競爭對手分析、決標價比、週期標案預告與關鍵字電子報。
+
+維護者：仁禾管理顧問（renhe74123@gmail.com，LINE 官方帳號：@891tcxhu）。資料來源：政府電子採購網（web.pcc.gov.tw，經 pcc-api.openfun.app 開放 API 取得）。最近更新：2026-10-24 09:36（台北時間）。
+
+## 主要功能
+- [標案搜尋](https://www.bidking.tw/)：搜尋 2024 年起所有招標、決標公告，可依案名、機關、投標或得標廠商查詢，每筆附原始公告連結。
+- [競爭對手分析](https://www.bidking.tw/rival.html)：輸入廠商名稱或統編，查詢主要競爭對手、同場投標次數、勝負與雙方皆得標紀錄。
+- [無法決標專區](https://www.bidking.tw/nobid.html)：整理流標、廢標等無法決標的案件，常會重新招標，是可提前準備的商機。
+- [關鍵字訂閱電子報](https://www.bidking.tw/subscribe.html)：輸入 Email 與關鍵字，平日早上收到符合的新標案，可選縣市，隨時取消。
+- [機關發包排行與年度趨勢](https://www.bidking.tw/rank.html)：2020 年起各機關發包件數排行與 2024 年起決標金額排行。
+- [小額接案專區](https://www.bidking.tw/small.html)：預算 50–300 萬元、招標中的設計、影音、活動、網站維護案。
+- [統編公司檔案](https://www.bidking.tw/company.html)：用統一編號或公司名稱查投標、得標實績、常往來機關，並推薦適合投的標案。
+- [決標價比分析](https://www.bidking.tw/ratio.html)：決標金額占預算比例，依機關、類別、預算區間統計，協助評估報價。
+- [週期標案預告](https://www.bidking.tw/cycle.html)：依歷年同機關同名案的發包月份，預告未來 60 天可能出現的週期性標案。
+- [分類瀏覽](https://www.bidking.tw/browse.html)：依地區、預算級距、關鍵字、機關、廠商、日期瀏覽標案。
+
+## 說明
+- [常見問答](https://www.bidking.tw/faq.html)
+- [關於標案王與資料來源](https://www.bidking.tw/about.html)
+- [完整說明（llms-full.txt）](https://www.bidking.tw/llms-full.txt)
+- [網站地圖](https://www.bidking.tw/sitemap.xml)
+
+## 分類頁
+- 關鍵字頁 181 個：https://www.bidking.tw/k/<關鍵字>.html，例如 [資訊](https://www.bidking.tw/k/%E8%B3%87%E8%A8%8A.html)
+- 機關頁 400 個：https://www.bidking.tw/u/<機關>.html
+- 縣市頁 23 個、預算級距頁 6 個、每日公告頁 45 個、廠商頁 500 個
+
+## 統計（2026-10-24 09:36）
+- 收錄 2024 年起完整標案 560,613 件（2024/01/02–2026/10/20）
+- 已決標：455,748 件
+- 無法決標：43,597 件
+- 招標中：5,721 件
+- 已截標：5,649 件
+- 已公告：49,898 件
+
+## 常見問答
+### 標案王是什麼？
+標案王（www.bidking.tw）是仁禾管理顧問建置的免費台灣政府標案搜尋網站，彙整政府電子採購網的招標與決標公告，目前收錄 2024 年起 560,613 件完整標案，以及 2020–2023 年的回溯摘要。
+
+### 標案王的資料來源是什麼？
+資料來自政府電子採購網（web.pcc.gov.tw，經 pcc-api.openfun.app 開放 API 取得）。每筆標案都附原始公告連結，實際內容以政府電子採購網公告為準。
+
+### 資料多久更新一次？
+平日每天 2:07、12:07、18:07（台北時間）自動更新。本頁最近更新時間為 2026-10-24 09:36。
+
+### 使用標案王要付費嗎？
+目前所有查詢、分析與關鍵字電子報都免費，不需註冊。
+
+### 目前有多少件招標中的案子？
+截至 2026-10-24 09:36，招標中案件 5,721 件；全部收錄案件中已決標 455,748 件、無法決標 43,597 件。
+
+### 怎麼知道競爭對手是誰？
+在「競爭對手分析」頁輸入廠商名稱或統一編號，就能看到 2020 年起與它同場投標最多的廠商、雙方勝負與雙方皆得標的次數。
+
+### 決標價比是什麼？
+決標價比＝決標金額 ÷ 預算。標案王依機關、採購類別與預算區間統計平均數與中位數，例如工程類中位數約 95%，可作為報價參考。
+
+### 怎麼訂閱標案通知？
+到「關鍵字訂閱」頁輸入 Email、關鍵字與縣市，每個平日早上 7:11（台北時間）會寄出符合條件的新標案，信中可隨時取消。
+
+### 2020–2023 年的資料有什麼限制？
+2020–2023 年為公告摘要回溯，有案名、機關、投標與得標廠商，但沒有預算與決標金額；全文搜尋只涵蓋 2024 年起的案件。
+
+### 需要投標策略或補助申請協助，可以找誰？
+可以聯絡網站維護者仁禾管理顧問：Email renhe74123@gmail.com，LINE 官方帳號：@891tcxhu。
+
+
+## 關鍵字頁
+- [「AI」相關的政府採購招標公告](https://www.bidking.tw/k/AI.html)
+- [「下水道」相關的政府採購招標公告](https://www.bidking.tw/k/下水道.html)
+- [「交通」相關的政府採購招標公告](https://www.bidking.tw/k/交通.html)
+- [「人力」相關的政府採購招標公告](https://www.bidking.tw/k/人力.html)
+- [「人行道」相關的政府採購招標公告](https://www.bidking.tw/k/人行道.html)
+- [「伺服器」相關的政府採購招標公告](https://www.bidking.tw/k/伺服器.html)
+- [「保全」相關的政府採購招標公告](https://www.bidking.tw/k/保全.html)
+- [「保險」相關的政府採購招標公告](https://www.bidking.tw/k/保險.html)
+- [「保養」相關的政府採購招標公告](https://www.bidking.tw/k/保養.html)
+- [「修繕」相關的政府採購招標公告](https://www.bidking.tw/k/修繕.html)
+- [「停車場」相關的政府採購招標公告](https://www.bidking.tw/k/停車場.html)
+- [「健康檢查」相關的政府採購招標公告](https://www.bidking.tw/k/健康檢查.html)
+- [「儀器」相關的政府採購招標公告](https://www.bidking.tw/k/儀器.html)
+- [「公園」相關的政府採購招標公告](https://www.bidking.tw/k/公園.html)
+- [「公車」相關的政府採購招標公告](https://www.bidking.tw/k/公車.html)
+- [「出版」相關的政府採購招標公告](https://www.bidking.tw/k/出版.html)
+- [「制服」相關的政府採購招標公告](https://www.bidking.tw/k/制服.html)
+- [「午餐」相關的政府採購招標公告](https://www.bidking.tw/k/午餐.html)
+- [「博物館」相關的政府採購招標公告](https://www.bidking.tw/k/博物館.html)
+- [「印刷」相關的政府採購招標公告](https://www.bidking.tw/k/印刷.html)
+- [「印表機」相關的政府採購招標公告](https://www.bidking.tw/k/印表機.html)
+- [「原住民」相關的政府採購招標公告](https://www.bidking.tw/k/原住民.html)
+- [「古蹟」相關的政府採購招標公告](https://www.bidking.tw/k/古蹟.html)
+- [「回收」相關的政府採購招標公告](https://www.bidking.tw/k/回收.html)
+- [「國防」相關的政府採購招標公告](https://www.bidking.tw/k/國防.html)
+- [「圖書」相關的政府採購招標公告](https://www.bidking.tw/k/圖書.html)
+- [「圖書館」相關的政府採購招標公告](https://www.bidking.tw/k/圖書館.html)
+- [「團膳」相關的政府採購招標公告](https://www.bidking.tw/k/團膳.html)
+- [「垃圾」相關的政府採購招標公告](https://www.bidking.tw/k/垃圾.html)
+- [「太陽光電」相關的政府採購招標公告](https://www.bidking.tw/k/太陽光電.html)
+- [「委外」相關的政府採購招標公告](https://www.bidking.tw/k/委外.html)
+- [「委託專業服務」相關的政府採購招標公告](https://www.bidking.tw/k/委託專業服務.html)
+- [「委託技術服務」相關的政府採購招標公告](https://www.bidking.tw/k/委託技術服務.html)
+- [「委託研究」相關的政府採購招標公告](https://www.bidking.tw/k/委託研究.html)
+- [「委託辦理」相關的政府採購招標公告](https://www.bidking.tw/k/委託辦理.html)
+- [「學校」相關的政府採購招標公告](https://www.bidking.tw/k/學校.html)
+- [「客家」相關的政府採購招標公告](https://www.bidking.tw/k/客家.html)
+- [「宣導」相關的政府採購招標公告](https://www.bidking.tw/k/宣導.html)
+- [「家具」相關的政府採購招標公告](https://www.bidking.tw/k/家具.html)
+- [「實驗室」相關的政府採購招標公告](https://www.bidking.tw/k/實驗室.html)
+- [「屋頂」相關的政府採購招標公告](https://www.bidking.tw/k/屋頂.html)
+- [「展覽」相關的政府採購招標公告](https://www.bidking.tw/k/展覽.html)
+- [「工程」相關的政府採購招標公告](https://www.bidking.tw/k/工程.html)
+- [「平板」相關的政府採購招標公告](https://www.bidking.tw/k/平板.html)
+- [「幼兒園」相關的政府採購招標公告](https://www.bidking.tw/k/幼兒園.html)
+- [「廢棄物」相關的政府採購招標公告](https://www.bidking.tw/k/廢棄物.html)
+- [「廣告」相關的政府採購招標公告](https://www.bidking.tw/k/廣告.html)
+- [「建築」相關的政府採購招標公告](https://www.bidking.tw/k/建築.html)
+- [「影印機」相關的政府採購招標公告](https://www.bidking.tw/k/影印機.html)
+- [「影片」相關的政府採購招標公告](https://www.bidking.tw/k/影片.html)
+- [「手機」相關的政府採購招標公告](https://www.bidking.tw/k/手機.html)
+- [「拆除」相關的政府採購招標公告](https://www.bidking.tw/k/拆除.html)
+- [「拍攝」相關的政府採購招標公告](https://www.bidking.tw/k/拍攝.html)
+- [「捷運」相關的政府採購招標公告](https://www.bidking.tw/k/捷運.html)
+- [「排水」相關的政府採購招標公告](https://www.bidking.tw/k/排水.html)
+- [「掩埋」相關的政府採購招標公告](https://www.bidking.tw/k/掩埋.html)
+- [「攝影」相關的政府採購招標公告](https://www.bidking.tw/k/攝影.html)
+- [「改善工程」相關的政府採購招標公告](https://www.bidking.tw/k/改善工程.html)
+- [「救護車」相關的政府採購招標公告](https://www.bidking.tw/k/救護車.html)
+- [「教具」相關的政府採購招標公告](https://www.bidking.tw/k/教具.html)
+- [「教材」相關的政府採購招標公告](https://www.bidking.tw/k/教材.html)
+- [「教育訓練」相關的政府採購招標公告](https://www.bidking.tw/k/教育訓練.html)
+- [「整修」相關的政府採購招標公告](https://www.bidking.tw/k/整修.html)
+- [「文具」相關的政府採購招標公告](https://www.bidking.tw/k/文具.html)
+- [「文化」相關的政府採購招標公告](https://www.bidking.tw/k/文化.html)
+- [「新住民」相關的政府採購招標公告](https://www.bidking.tw/k/新住民.html)
+- [「新建工程」相關的政府採購招標公告](https://www.bidking.tw/k/新建工程.html)
+- [「景觀」相關的政府採購招標公告](https://www.bidking.tw/k/景觀.html)
+- [「智慧」相關的政府採購招標公告](https://www.bidking.tw/k/智慧.html)
+- [「書籍」相關的政府採購招標公告](https://www.bidking.tw/k/書籍.html)
+- [「林業」相關的政府採購招標公告](https://www.bidking.tw/k/林業.html)
+- [「校舍」相關的政府採購招標公告](https://www.bidking.tw/k/校舍.html)
+- [「植栽」相關的政府採購招標公告](https://www.bidking.tw/k/植栽.html)
+- [「標售」相關的政府採購招標公告](https://www.bidking.tw/k/標售.html)
+- [「樹木」相關的政府採購招標公告](https://www.bidking.tw/k/樹木.html)
+- [「橋梁」相關的政府採購招標公告](https://www.bidking.tw/k/橋梁.html)
+- [「機場」相關的政府採購招標公告](https://www.bidking.tw/k/機場.html)
+- [「機車」相關的政府採購招標公告](https://www.bidking.tw/k/機車.html)
+- [「機電」相關的政府採購招標公告](https://www.bidking.tw/k/機電.html)
+- [「檢測」相關的政府採購招標公告](https://www.bidking.tw/k/檢測.html)
+- [「檢驗」相關的政府採購招標公告](https://www.bidking.tw/k/檢驗.html)
+- [「殯葬」相關的政府採購招標公告](https://www.bidking.tw/k/殯葬.html)
+- [「水利」相關的政府採購招標公告](https://www.bidking.tw/k/水利.html)
+- [「水質」相關的政府採購招標公告](https://www.bidking.tw/k/水質.html)
+- [「污水」相關的政府採購招標公告](https://www.bidking.tw/k/污水.html)
+- [「汽車」相關的政府採購招標公告](https://www.bidking.tw/k/汽車.html)
+- [「河川」相關的政府採購招標公告](https://www.bidking.tw/k/河川.html)
+- [「油料」相關的政府採購招標公告](https://www.bidking.tw/k/油料.html)
+- [「法院」相關的政府採購招標公告](https://www.bidking.tw/k/法院.html)
+- [「活動」相關的政府採購招標公告](https://www.bidking.tw/k/活動.html)
+- [「派遣」相關的政府採購招標公告](https://www.bidking.tw/k/派遣.html)
+- [「海報」相關的政府採購招標公告](https://www.bidking.tw/k/海報.html)
+- [「消防」相關的政府採購招標公告](https://www.bidking.tw/k/消防.html)
+- [「消防車」相關的政府採購招標公告](https://www.bidking.tw/k/消防車.html)
+- [「清潔」相關的政府採購招標公告](https://www.bidking.tw/k/清潔.html)
+- [「清運」相關的政府採購招標公告](https://www.bidking.tw/k/清運.html)
+- [「測量」相關的政府採購招標公告](https://www.bidking.tw/k/測量.html)
+- [「港口」相關的政府採購招標公告](https://www.bidking.tw/k/港口.html)
+- [「漁業」相關的政府採購招標公告](https://www.bidking.tw/k/漁業.html)
+- [「焚化」相關的政府採購招標公告](https://www.bidking.tw/k/焚化.html)
+- [「無人機」相關的政府採購招標公告](https://www.bidking.tw/k/無人機.html)
+- [「照明」相關的政府採購招標公告](https://www.bidking.tw/k/照明.html)
+- [「燃料」相關的政府採購招標公告](https://www.bidking.tw/k/燃料.html)
+- [「環境清潔」相關的政府採購招標公告](https://www.bidking.tw/k/環境清潔.html)
+- [「環境監測」相關的政府採購招標公告](https://www.bidking.tw/k/環境監測.html)
+- [「畜牧」相關的政府採購招標公告](https://www.bidking.tw/k/畜牧.html)
+- [「疫苗」相關的政府採購招標公告](https://www.bidking.tw/k/疫苗.html)
+- [「病媒」相關的政府採購招標公告](https://www.bidking.tw/k/病媒.html)
+- [「監獄」相關的政府採購招標公告](https://www.bidking.tw/k/監獄.html)
+- [「監視」相關的政府採購招標公告](https://www.bidking.tw/k/監視.html)
+- [「監造」相關的政府採購招標公告](https://www.bidking.tw/k/監造.html)
+- [「研究」相關的政府採購招標公告](https://www.bidking.tw/k/研究.html)
+- [「硬體」相關的政府採購招標公告](https://www.bidking.tw/k/硬體.html)
+- [「碳盤查」相關的政府採購招標公告](https://www.bidking.tw/k/碳盤查.html)
+- [「社區」相關的政府採購招標公告](https://www.bidking.tw/k/社區.html)
+- [「社福」相關的政府採購招標公告](https://www.bidking.tw/k/社福.html)
+- [「禮儀」相關的政府採購招標公告](https://www.bidking.tw/k/禮儀.html)
+- [「租賃」相關的政府採購招標公告](https://www.bidking.tw/k/租賃.html)
+- [「空氣品質」相關的政府採購招標公告](https://www.bidking.tw/k/空氣品質.html)
+- [「空調」相關的政府採購招標公告](https://www.bidking.tw/k/空調.html)
+- [「節能」相關的政府採購招標公告](https://www.bidking.tw/k/節能.html)
+- [「綠美化」相關的政府採購招標公告](https://www.bidking.tw/k/綠美化.html)
+- [「維修」相關的政府採購招標公告](https://www.bidking.tw/k/維修.html)
+- [「維護」相關的政府採購招標公告](https://www.bidking.tw/k/維護.html)
+- [「網站」相關的政府採購招標公告](https://www.bidking.tw/k/網站.html)
+- [「網路」相關的政府採購招標公告](https://www.bidking.tw/k/網路.html)
+- [「翻譯」相關的政府採購招標公告](https://www.bidking.tw/k/翻譯.html)
+- [「耐震」相關的政府採購招標公告](https://www.bidking.tw/k/耐震.html)
+- [「膳食」相關的政府採購招標公告](https://www.bidking.tw/k/膳食.html)
+- [「臨時人員」相關的政府採購招標公告](https://www.bidking.tw/k/臨時人員.html)
+- [「自行車道」相關的政府採購招標公告](https://www.bidking.tw/k/自行車道.html)
+- [「舞台」相關的政府採購招標公告](https://www.bidking.tw/k/舞台.html)
+- [「藥品」相關的政府採購招標公告](https://www.bidking.tw/k/藥品.html)
+- [「號誌」相關的政府採購招標公告](https://www.bidking.tw/k/號誌.html)
+- [「行銷」相關的政府採購招標公告](https://www.bidking.tw/k/行銷.html)
+- [「衛材」相關的政府採購招標公告](https://www.bidking.tw/k/衛材.html)
+- [「補強」相關的政府採購招標公告](https://www.bidking.tw/k/補強.html)
+- [「規劃」相關的政府採購招標公告](https://www.bidking.tw/k/規劃.html)
+- [「觀光」相關的政府採購招標公告](https://www.bidking.tw/k/觀光.html)
+- [「訓練」相關的政府採購招標公告](https://www.bidking.tw/k/訓練.html)
+- [「設備」相關的政府採購招標公告](https://www.bidking.tw/k/設備.html)
+- [「設計」相關的政府採購招標公告](https://www.bidking.tw/k/設計.html)
+- [「評估」相關的政府採購招標公告](https://www.bidking.tw/k/評估.html)
+- [「試劑」相關的政府採購招標公告](https://www.bidking.tw/k/試劑.html)
+- [「課程」相關的政府採購招標公告](https://www.bidking.tw/k/課程.html)
+- [「調查」相關的政府採購招標公告](https://www.bidking.tw/k/調查.html)
+- [「講座」相關的政府採購招標公告](https://www.bidking.tw/k/講座.html)
+- [「警察」相關的政府採購招標公告](https://www.bidking.tw/k/警察.html)
+- [「護岸」相關的政府採購招標公告](https://www.bidking.tw/k/護岸.html)
+- [「財產保險」相關的政府採購招標公告](https://www.bidking.tw/k/財產保險.html)
+- [「資安」相關的政府採購招標公告](https://www.bidking.tw/k/資安.html)
+- [「資源回收」相關的政府採購招標公告](https://www.bidking.tw/k/資源回收.html)
+- [「資訊」相關的政府採購招標公告](https://www.bidking.tw/k/資訊.html)
+- [「資訊系統」相關的政府採購招標公告](https://www.bidking.tw/k/資訊系統.html)
+- [「路燈」相關的政府採購招標公告](https://www.bidking.tw/k/路燈.html)
+- [「車輛」相關的政府採購招標公告](https://www.bidking.tw/k/車輛.html)
+- [「軟體」相關的政府採購招標公告](https://www.bidking.tw/k/軟體.html)
+- [「辦公用品」相關的政府採購招標公告](https://www.bidking.tw/k/辦公用品.html)
+- [「農業」相關的政府採購招標公告](https://www.bidking.tw/k/農業.html)
+- [「農機」相關的政府採購招標公告](https://www.bidking.tw/k/農機.html)
+- [「遊樂設施」相關的政府採購招標公告](https://www.bidking.tw/k/遊樂設施.html)
+- [「運動」相關的政府採購招標公告](https://www.bidking.tw/k/運動.html)
+- [「道路」相關的政府採購招標公告](https://www.bidking.tw/k/道路.html)
+- [「選舉」相關的政府採購招標公告](https://www.bidking.tw/k/選舉.html)
+- [「醫材」相關的政府採購招標公告](https://www.bidking.tw/k/醫材.html)
+- [「醫療」相關的政府採購招標公告](https://www.bidking.tw/k/醫療.html)
+- [「鋪面」相關的政府採購招標公告](https://www.bidking.tw/k/鋪面.html)
+- [「鐵路」相關的政府採購招標公告](https://www.bidking.tw/k/鐵路.html)
+- [「長照」相關的政府採購招標公告](https://www.bidking.tw/k/長照.html)
+- [「防水」相關的政府採購招標公告](https://www.bidking.tw/k/防水.html)
+- [「除草」相關的政府採購招標公告](https://www.bidking.tw/k/除草.html)
+- [「雲端」相關的政府採購招標公告](https://www.bidking.tw/k/雲端.html)
+- [「電信」相關的政府採購招標公告](https://www.bidking.tw/k/電信.html)
+- [「電力」相關的政府採購招標公告](https://www.bidking.tw/k/電力.html)
+- [「電梯」相關的政府採購招標公告](https://www.bidking.tw/k/電梯.html)
+- [「電腦」相關的政府採購招標公告](https://www.bidking.tw/k/電腦.html)
+- [「音響」相關的政府採購招標公告](https://www.bidking.tw/k/音響.html)
+- [「顧問」相關的政府採購招標公告](https://www.bidking.tw/k/顧問.html)
+- [「食材」相關的政府採購招標公告](https://www.bidking.tw/k/食材.html)
+- [「餐盒」相關的政府採購招標公告](https://www.bidking.tw/k/餐盒.html)
+- [「體育」相關的政府採購招標公告](https://www.bidking.tw/k/體育.html)
+
+## 縣市頁
+- [中央/其他政府採購招標公告](https://www.bidking.tw/c/中央_其他.html)
+- [南投縣政府採購招標公告](https://www.bidking.tw/c/南投縣.html)
+- [嘉義市政府採購招標公告](https://www.bidking.tw/c/嘉義市.html)
+- [嘉義縣政府採購招標公告](https://www.bidking.tw/c/嘉義縣.html)
+- [基隆市政府採購招標公告](https://www.bidking.tw/c/基隆市.html)
+- [宜蘭縣政府採購招標公告](https://www.bidking.tw/c/宜蘭縣.html)
+- [屏東縣政府採購招標公告](https://www.bidking.tw/c/屏東縣.html)
+- [彰化縣政府採購招標公告](https://www.bidking.tw/c/彰化縣.html)
+- [新北市政府採購招標公告](https://www.bidking.tw/c/新北市.html)
+- [新竹市政府採購招標公告](https://www.bidking.tw/c/新竹市.html)
+- [新竹縣政府採購招標公告](https://www.bidking.tw/c/新竹縣.html)
+- [桃園市政府採購招標公告](https://www.bidking.tw/c/桃園市.html)
+- [澎湖縣政府採購招標公告](https://www.bidking.tw/c/澎湖縣.html)
+- [臺中市政府採購招標公告](https://www.bidking.tw/c/臺中市.html)
+- [臺北市政府採購招標公告](https://www.bidking.tw/c/臺北市.html)
+- [臺南市政府採購招標公告](https://www.bidking.tw/c/臺南市.html)
+- [臺東縣政府採購招標公告](https://www.bidking.tw/c/臺東縣.html)
+- [花蓮縣政府採購招標公告](https://www.bidking.tw/c/花蓮縣.html)
+- [苗栗縣政府採購招標公告](https://www.bidking.tw/c/苗栗縣.html)
+- [連江縣政府採購招標公告](https://www.bidking.tw/c/連江縣.html)
+- [金門縣政府採購招標公告](https://www.bidking.tw/c/金門縣.html)
+- [雲林縣政府採購招標公告](https://www.bidking.tw/c/雲林縣.html)
+- [高雄市政府採購招標公告](https://www.bidking.tw/c/高雄市.html)
+
+## 預算級距頁
+- [預算1億至5億的政府標案](https://www.bidking.tw/b/100m-500m.html)
+- [預算1000萬至5000萬的政府標案](https://www.bidking.tw/b/10m-50m.html)
+- [預算100萬至1000萬的政府標案](https://www.bidking.tw/b/1m-10m.html)
+- [預算5000萬至1億的政府標案](https://www.bidking.tw/b/50m-100m.html)
+- [預算5億以上的政府標案](https://www.bidking.tw/b/over-500m.html)
+- [預算100萬以下的政府標案](https://www.bidking.tw/b/under-1m.html)
+
+## 機關頁
+- [中央印製廠 招標公告與決標紀錄](https://www.bidking.tw/u/中央印製廠.html)
+- [中央研究院 招標公告與決標紀錄](https://www.bidking.tw/u/中央研究院.html)
+- [中央警察大學 招標公告與決標紀錄](https://www.bidking.tw/u/中央警察大學.html)
+- [中央造幣廠 招標公告與決標紀錄](https://www.bidking.tw/u/中央造幣廠.html)
+- [中華郵政股份有限公司 招標公告與決標紀錄](https://www.bidking.tw/u/中華郵政股份有限公司.html)
+- [中華郵政股份有限公司臺中郵局 招標公告與決標紀錄](https://www.bidking.tw/u/中華郵政股份有限公司臺中郵局.html)
+- [中華郵政股份有限公司臺北郵局 招標公告與決標紀錄](https://www.bidking.tw/u/中華郵政股份有限公司臺北郵局.html)
+- [交通部中央氣象局 招標公告與決標紀錄](https://www.bidking.tw/u/交通部中央氣象局.html)
+- [交通部中央氣象署 招標公告與決標紀錄](https://www.bidking.tw/u/交通部中央氣象署.html)
+- [交通部公路局中區養護工程分局 招標公告與決標紀錄](https://www.bidking.tw/u/交通部公路局中區養護工程分局.html)
+- [交通部公路局北區養護工程分局 招標公告與決標紀錄](https://www.bidking.tw/u/交通部公路局北區養護工程分局.html)
+- [交通部公路局南區養護工程分局 招標公告與決標紀錄](https://www.bidking.tw/u/交通部公路局南區養護工程分局.html)
+- [交通部公路局東區養護工程分局 招標公告與決標紀錄](https://www.bidking.tw/u/交通部公路局東區養護工程分局.html)
+- [交通部公路局雲嘉南區養護工程分局 招標公告與決標紀錄](https://www.bidking.tw/u/交通部公路局雲嘉南區養護工程分局.html)
+- [交通部公路總局第一區養護工程處 招標公告與決標紀錄](https://www.bidking.tw/u/交通部公路總局第一區養護工程處.html)
+- [交通部公路總局第三區養護工程處 招標公告與決標紀錄](https://www.bidking.tw/u/交通部公路總局第三區養護工程處.html)
+- [交通部公路總局第二區養護工程處 招標公告與決標紀錄](https://www.bidking.tw/u/交通部公路總局第二區養護工程處.html)
+- [交通部公路總局第五區養護工程處 招標公告與決標紀錄](https://www.bidking.tw/u/交通部公路總局第五區養護工程處.html)
+- [交通部公路總局第四區養護工程處 招標公告與決標紀錄](https://www.bidking.tw/u/交通部公路總局第四區養護工程處.html)
+- [交通部民用航空局飛航服務總臺 招標公告與決標紀錄](https://www.bidking.tw/u/交通部民用航空局飛航服務總臺.html)
+- [交通部臺灣鐵路管理局 招標公告與決標紀錄](https://www.bidking.tw/u/交通部臺灣鐵路管理局.html)
+- [交通部航港局 招標公告與決標紀錄](https://www.bidking.tw/u/交通部航港局.html)
+- [交通部觀光局 招標公告與決標紀錄](https://www.bidking.tw/u/交通部觀光局.html)
+- [交通部觀光署 招標公告與決標紀錄](https://www.bidking.tw/u/交通部觀光署.html)
+- [交通部運輸研究所 招標公告與決標紀錄](https://www.bidking.tw/u/交通部運輸研究所.html)
+- [交通部高速公路局中區養護工程分局 招標公告與決標紀錄](https://www.bidking.tw/u/交通部高速公路局中區養護工程分局.html)
+- [交通部高速公路局北區養護工程分局 招標公告與決標紀錄](https://www.bidking.tw/u/交通部高速公路局北區養護工程分局.html)
+- [交通部高速公路局南區養護工程分局 招標公告與決標紀錄](https://www.bidking.tw/u/交通部高速公路局南區養護工程分局.html)
+- [僑務委員會 招標公告與決標紀錄](https://www.bidking.tw/u/僑務委員會.html)
+- [內政部 招標公告與決標紀錄](https://www.bidking.tw/u/內政部.html)
+- [內政部消防署 招標公告與決標紀錄](https://www.bidking.tw/u/內政部消防署.html)
+- [內政部營建署 招標公告與決標紀錄](https://www.bidking.tw/u/內政部營建署.html)
+- [內政部移民署 招標公告與決標紀錄](https://www.bidking.tw/u/內政部移民署.html)
+- [內政部警政署刑事警察局 招標公告與決標紀錄](https://www.bidking.tw/u/內政部警政署刑事警察局.html)
+- [勞動部 招標公告與決標紀錄](https://www.bidking.tw/u/勞動部.html)
+- [勞動部勞動力發展署 招標公告與決標紀錄](https://www.bidking.tw/u/勞動部勞動力發展署.html)
+- [勞動部勞動力發展署中彰投分署 招標公告與決標紀錄](https://www.bidking.tw/u/勞動部勞動力發展署中彰投分署.html)
+- [勞動部勞動力發展署北基宜花金馬分署 招標公告與決標紀錄](https://www.bidking.tw/u/勞動部勞動力發展署北基宜花金馬分署.html)
+- [勞動部勞動力發展署桃竹苗分署 招標公告與決標紀錄](https://www.bidking.tw/u/勞動部勞動力發展署桃竹苗分署.html)
+- [勞動部勞動力發展署雲嘉南分署 招標公告與決標紀錄](https://www.bidking.tw/u/勞動部勞動力發展署雲嘉南分署.html)
+- [勞動部勞動力發展署高屏澎東分署 招標公告與決標紀錄](https://www.bidking.tw/u/勞動部勞動力發展署高屏澎東分署.html)
+- [南投縣中寮鄉公所 招標公告與決標紀錄](https://www.bidking.tw/u/南投縣中寮鄉公所.html)
+- [南投縣仁愛鄉公所 招標公告與決標紀錄](https://www.bidking.tw/u/南投縣仁愛鄉公所.html)
+- [南投縣信義鄉公所 招標公告與決標紀錄](https://www.bidking.tw/u/南投縣信義鄉公所.html)
+- [南投縣南投市公所 招標公告與決標紀錄](https://www.bidking.tw/u/南投縣南投市公所.html)
+- [南投縣名間鄉公所 招標公告與決標紀錄](https://www.bidking.tw/u/南投縣名間鄉公所.html)
+- [南投縣國姓鄉公所 招標公告與決標紀錄](https://www.bidking.tw/u/南投縣國姓鄉公所.html)
+- [南投縣埔里鎮公所 招標公告與決標紀錄](https://www.bidking.tw/u/南投縣埔里鎮公所.html)
+- [南投縣政府 招標公告與決標紀錄](https://www.bidking.tw/u/南投縣政府.html)
+- [南投縣竹山鎮公所 招標公告與決標紀錄](https://www.bidking.tw/u/南投縣竹山鎮公所.html)
+- [南投縣草屯鎮公所 招標公告與決標紀錄](https://www.bidking.tw/u/南投縣草屯鎮公所.html)
+- [南投縣魚池鄉公所 招標公告與決標紀錄](https://www.bidking.tw/u/南投縣魚池鄉公所.html)
+- [南投縣鹿谷鄉公所 招標公告與決標紀錄](https://www.bidking.tw/u/南投縣鹿谷鄉公所.html)
+- [南臺學校財團法人南臺科技大學 招標公告與決標紀錄](https://www.bidking.tw/u/南臺學校財團法人南臺科技大學.html)
+- [原住民族委員會 招標公告與決標紀錄](https://www.bidking.tw/u/原住民族委員會.html)
+- [台灣中油股份有限公司 招標公告與決標紀錄](https://www.bidking.tw/u/台灣中油股份有限公司.html)
+- [台灣中油股份有限公司天然氣事業部公用天然氣營業處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣中油股份有限公司天然氣事業部公用天然氣營業處.html)
+- [台灣中油股份有限公司天然氣事業部北區營業處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣中油股份有限公司天然氣事業部北區營業處.html)
+- [台灣中油股份有限公司探採事業部 招標公告與決標紀錄](https://www.bidking.tw/u/台灣中油股份有限公司探採事業部.html)
+- [台灣中油股份有限公司油品行銷事業部台中營業處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣中油股份有限公司油品行銷事業部台中營業處.html)
+- [台灣中油股份有限公司油品行銷事業部基隆營業處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣中油股份有限公司油品行銷事業部基隆營業處.html)
+- [台灣中油股份有限公司油品行銷事業部東區營業處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣中油股份有限公司油品行銷事業部東區營業處.html)
+- [台灣中油股份有限公司煉製事業部桃園煉油廠 招標公告與決標紀錄](https://www.bidking.tw/u/台灣中油股份有限公司煉製事業部桃園煉油廠.html)
+- [台灣中油股份有限公司石化事業部 招標公告與決標紀錄](https://www.bidking.tw/u/台灣中油股份有限公司石化事業部.html)
+- [台灣自來水股份有限公司 招標公告與決標紀錄](https://www.bidking.tw/u/台灣自來水股份有限公司.html)
+- [台灣自來水股份有限公司屏東區管理處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣自來水股份有限公司屏東區管理處.html)
+- [台灣自來水股份有限公司第一區管理處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣自來水股份有限公司第一區管理處.html)
+- [台灣自來水股份有限公司第七區管理處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣自來水股份有限公司第七區管理處.html)
+- [台灣自來水股份有限公司第三區管理處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣自來水股份有限公司第三區管理處.html)
+- [台灣自來水股份有限公司第二區管理處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣自來水股份有限公司第二區管理處.html)
+- [台灣自來水股份有限公司第五區管理處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣自來水股份有限公司第五區管理處.html)
+- [台灣自來水股份有限公司第八區管理處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣自來水股份有限公司第八區管理處.html)
+- [台灣自來水股份有限公司第六區管理處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣自來水股份有限公司第六區管理處.html)
+- [台灣自來水股份有限公司第十一區管理處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣自來水股份有限公司第十一區管理處.html)
+- [台灣自來水股份有限公司第十二區管理處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣自來水股份有限公司第十二區管理處.html)
+- [台灣自來水股份有限公司第十區管理處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣自來水股份有限公司第十區管理處.html)
+- [台灣自來水股份有限公司第四區管理處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣自來水股份有限公司第四區管理處.html)
+- [台灣電力股份有限公司 招標公告與決標紀錄](https://www.bidking.tw/u/台灣電力股份有限公司.html)
+- [台灣電力股份有限公司協和發電廠 招標公告與決標紀錄](https://www.bidking.tw/u/台灣電力股份有限公司協和發電廠.html)
+- [台灣電力股份有限公司台中供電區營運處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣電力股份有限公司台中供電區營運處.html)
+- [台灣電力股份有限公司台中區營業處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣電力股份有限公司台中區營業處.html)
+- [台灣電力股份有限公司台中發電廠 招標公告與決標紀錄](https://www.bidking.tw/u/台灣電力股份有限公司台中發電廠.html)
+- [台灣電力股份有限公司台北供電區營運處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣電力股份有限公司台北供電區營運處.html)
+- [台灣電力股份有限公司嘉南供電區營運處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣電力股份有限公司嘉南供電區營運處.html)
+- [台灣電力股份有限公司大林發電廠 招標公告與決標紀錄](https://www.bidking.tw/u/台灣電力股份有限公司大林發電廠.html)
+- [台灣電力股份有限公司大潭發電廠 招標公告與決標紀錄](https://www.bidking.tw/u/台灣電力股份有限公司大潭發電廠.html)
+- [台灣電力股份有限公司彰化區營業處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣電力股份有限公司彰化區營業處.html)
+- [台灣電力股份有限公司新桃供電區營運處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣電力股份有限公司新桃供電區營運處.html)
+- [台灣電力股份有限公司林口發電廠 招標公告與決標紀錄](https://www.bidking.tw/u/台灣電力股份有限公司林口發電廠.html)
+- [台灣電力股份有限公司桃園區營業處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣電力股份有限公司桃園區營業處.html)
+- [台灣電力股份有限公司第一核能發電廠 招標公告與決標紀錄](https://www.bidking.tw/u/台灣電力股份有限公司第一核能發電廠.html)
+- [台灣電力股份有限公司第三核能發電廠 招標公告與決標紀錄](https://www.bidking.tw/u/台灣電力股份有限公司第三核能發電廠.html)
+- [台灣電力股份有限公司第二核能發電廠 招標公告與決標紀錄](https://www.bidking.tw/u/台灣電力股份有限公司第二核能發電廠.html)
+- [台灣電力股份有限公司綜合研究所 招標公告與決標紀錄](https://www.bidking.tw/u/台灣電力股份有限公司綜合研究所.html)
+- [台灣電力股份有限公司興達發電廠 招標公告與決標紀錄](https://www.bidking.tw/u/台灣電力股份有限公司興達發電廠.html)
+- [台灣電力股份有限公司輸變電工程處中區施工處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣電力股份有限公司輸變電工程處中區施工處.html)
+- [台灣電力股份有限公司輸變電工程處北區施工處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣電力股份有限公司輸變電工程處北區施工處.html)
+- [台灣電力股份有限公司輸變電工程處南區施工處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣電力股份有限公司輸變電工程處南區施工處.html)
+- [台灣電力股份有限公司通霄發電廠 招標公告與決標紀錄](https://www.bidking.tw/u/台灣電力股份有限公司通霄發電廠.html)
+- [台灣電力股份有限公司電力修護處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣電力股份有限公司電力修護處.html)
+- [台灣電力股份有限公司高屏供電區營運處 招標公告與決標紀錄](https://www.bidking.tw/u/台灣電力股份有限公司高屏供電區營運處.html)
+- [司法院 招標公告與決標紀錄](https://www.bidking.tw/u/司法院.html)
+- [嘉義市政府 招標公告與決標紀錄](https://www.bidking.tw/u/嘉義市政府.html)
+- [嘉義市政府環境保護局 招標公告與決標紀錄](https://www.bidking.tw/u/嘉義市政府環境保護局.html)
+- [嘉義縣中埔鄉公所 招標公告與決標紀錄](https://www.bidking.tw/u/嘉義縣中埔鄉公所.html)
+- [嘉義縣政府 招標公告與決標紀錄](https://www.bidking.tw/u/嘉義縣政府.html)
+- [嘉義縣文化觀光局 招標公告與決標紀錄](https://www.bidking.tw/u/嘉義縣文化觀光局.html)
+- [嘉義縣梅山鄉公所 招標公告與決標紀錄](https://www.bidking.tw/u/嘉義縣梅山鄉公所.html)
+- [嘉義縣番路鄉公所 招標公告與決標紀錄](https://www.bidking.tw/u/嘉義縣番路鄉公所.html)
+- [嘉義縣竹崎鄉公所 招標公告與決標紀錄](https://www.bidking.tw/u/嘉義縣竹崎鄉公所.html)
+- [嘉義縣阿里山鄉公所 招標公告與決標紀錄](https://www.bidking.tw/u/嘉義縣阿里山鄉公所.html)
+- [國家圖書館 招標公告與決標紀錄](https://www.bidking.tw/u/國家圖書館.html)
+- [國家安全局 招標公告與決標紀錄](https://www.bidking.tw/u/國家安全局.html)
+- [國家海洋研究院 招標公告與決標紀錄](https://www.bidking.tw/u/國家海洋研究院.html)
+- [國家發展委員會 招標公告與決標紀錄](https://www.bidking.tw/u/國家發展委員會.html)
+- [國家運動訓練中心 招標公告與決標紀錄](https://www.bidking.tw/u/國家運動訓練中心.html)
+- [國營臺灣鐵路股份有限公司 招標公告與決標紀錄](https://www.bidking.tw/u/國營臺灣鐵路股份有限公司.html)
+- [國立中央大學 招標公告與決標紀錄](https://www.bidking.tw/u/國立中央大學.html)
+- [國立中山大學 招標公告與決標紀錄](https://www.bidking.tw/u/國立中山大學.html)
+- [國立中正大學 招標公告與決標紀錄](https://www.bidking.tw/u/國立中正大學.html)
+- [國立中興大學 招標公告與決標紀錄](https://www.bidking.tw/u/國立中興大學.html)
+- [國立傳統藝術中心 招標公告與決標紀錄](https://www.bidking.tw/u/國立傳統藝術中心.html)
+- [國立嘉義大學 招標公告與決標紀錄](https://www.bidking.tw/u/國立嘉義大學.html)
+- [國立宜蘭大學 招標公告與決標紀錄](https://www.bidking.tw/u/國立宜蘭大學.html)
+- [國立屏東科技大學 招標公告與決標紀錄](https://www.bidking.tw/u/國立屏東科技大學.html)
+- [國立彰化師範大學 招標公告與決標紀錄](https://www.bidking.tw/u/國立彰化師範大學.html)
+- [國立成功大學 招標公告與決標紀錄](https://www.bidking.tw/u/國立成功大學.html)
+- [國立成功大學醫學院附設醫院 招標公告與決標紀錄](https://www.bidking.tw/u/國立成功大學醫學院附設醫院.html)
+- [國立政治大學 招標公告與決標紀錄](https://www.bidking.tw/u/國立政治大學.html)
+- [國立故宮博物院 招標公告與決標紀錄](https://www.bidking.tw/u/國立故宮博物院.html)
+- [國立東華大學 招標公告與決標紀錄](https://www.bidking.tw/u/國立東華大學.html)
+- [國立清華大學 招標公告與決標紀錄](https://www.bidking.tw/u/國立清華大學.html)
+- [國立自然科學博物館 招標公告與決標紀錄](https://www.bidking.tw/u/國立自然科學博物館.html)
+- [國立臺中教育大學 招標公告與決標紀錄](https://www.bidking.tw/u/國立臺中教育大學.html)
+- [國立臺中科技大學 招標公告與決標紀錄](https://www.bidking.tw/u/國立臺中科技大學.html)
+- [國立臺北科技大學 招標公告與決標紀錄](https://www.bidking.tw/u/國立臺北科技大學.html)
+- [國立臺灣大學 招標公告與決標紀錄](https://www.bidking.tw/u/國立臺灣大學.html)
+- [國立臺灣大學生物資源暨農學院實驗林管理處 招標公告與決標紀錄](https://www.bidking.tw/u/國立臺灣大學生物資源暨農學院實驗林管理處.html)
+- [國立臺灣大學醫學院附設醫院 招標公告與決標紀錄](https://www.bidking.tw/u/國立臺灣大學醫學院附設醫院.html)
+- [國立臺灣大學醫學院附設醫院新竹臺大分院 招標公告與決標紀錄](https://www.bidking.tw/u/國立臺灣大學醫學院附設醫院新竹臺大分院.html)
+- [國立臺灣大學醫學院附設醫院癌醫中心分院 招標公告與決標紀錄](https://www.bidking.tw/u/國立臺灣大學醫學院附設醫院癌醫中心分院.html)
+- [國立臺灣大學醫學院附設醫院雲林分院 招標公告與決標紀錄](https://www.bidking.tw/u/國立臺灣大學醫學院附設醫院雲林分院.html)
+- [國立臺灣師範大學 招標公告與決標紀錄](https://www.bidking.tw/u/國立臺灣師範大學.html)
+- [國立臺灣海洋大學 招標公告與決標紀錄](https://www.bidking.tw/u/國立臺灣海洋大學.html)
+- [國立臺灣科技大學 招標公告與決標紀錄](https://www.bidking.tw/u/國立臺灣科技大學.html)
+- [國立臺灣美術館 招標公告與決標紀錄](https://www.bidking.tw/u/國立臺灣美術館.html)
+- [國立臺灣藝術大學 招標公告與決標紀錄](https://www.bidking.tw/u/國立臺灣藝術大學.html)
+- [國立虎尾科技大學 招標公告與決標紀錄](https://www.bidking.tw/u/國立虎尾科技大學.html)
+- [國立陽明交通大學 招標公告與決標紀錄](https://www.bidking.tw/u/國立陽明交通大學.html)
+- [國立陽明交通大學附設醫院 招標公告與決標紀錄](https://www.bidking.tw/u/國立陽明交通大學附設醫院.html)
+- [國立雲林科技大學 招標公告與決標紀錄](https://www.bidking.tw/u/國立雲林科技大學.html)
+- [國立體育大學 招標公告與決標紀錄](https://www.bidking.tw/u/國立體育大學.html)
+- [國立高雄師範大學 招標公告與決標紀錄](https://www.bidking.tw/u/國立高雄師範大學.html)
+- [國立高雄科技大學 招標公告與決標紀錄](https://www.bidking.tw/u/國立高雄科技大學.html)
+- [國防大學 招標公告與決標紀錄](https://www.bidking.tw/u/國防大學.html)
+- [國防部 招標公告與決標紀錄](https://www.bidking.tw/u/國防部.html)
+- [國防部憲兵指揮部 招標公告與決標紀錄](https://www.bidking.tw/u/國防部憲兵指揮部.html)
+- [國防部政治作戰局 招標公告與決標紀錄](https://www.bidking.tw/u/國防部政治作戰局.html)
+- [國防部海軍司令部 招標公告與決標紀錄](https://www.bidking.tw/u/國防部海軍司令部.html)
+- [國防部空軍司令部 招標公告與決標紀錄](https://www.bidking.tw/u/國防部空軍司令部.html)
+- [國防部軍備局生產製造中心 招標公告與決標紀錄](https://www.bidking.tw/u/國防部軍備局生產製造中心.html)
+- [國防部軍醫局 招標公告與決標紀錄](https://www.bidking.tw/u/國防部軍醫局.html)
+- [國防部陸軍司令部 招標公告與決標紀錄](https://www.bidking.tw/u/國防部陸軍司令部.html)
+- [國防醫學大學 招標公告與決標紀錄](https://www.bidking.tw/u/國防醫學大學.html)
+- [國防醫學院 招標公告與決標紀錄](https://www.bidking.tw/u/國防醫學院.html)
+- [基隆市政府 招標公告與決標紀錄](https://www.bidking.tw/u/基隆市政府.html)
+- [外交部 招標公告與決標紀錄](https://www.bidking.tw/u/外交部.html)
+- [宜蘭縣宜蘭市公所 招標公告與決標紀錄](https://www.bidking.tw/u/宜蘭縣宜蘭市公所.html)
+- [宜蘭縣政府 招標公告與決標紀錄](https://www.bidking.tw/u/宜蘭縣政府.html)
+- [宜蘭縣政府文化局 招標公告與決標紀錄](https://www.bidking.tw/u/宜蘭縣政府文化局.html)
+- [宜蘭縣羅東鎮公所 招標公告與決標紀錄](https://www.bidking.tw/u/宜蘭縣羅東鎮公所.html)
+- [客家委員會客家文化發展中心 招標公告與決標紀錄](https://www.bidking.tw/u/客家委員會客家文化發展中心.html)
+- [屏東縣內埔鄉公所 招標公告與決標紀錄](https://www.bidking.tw/u/屏東縣內埔鄉公所.html)
+- [屏東縣屏東市公所 招標公告與決標紀錄](https://www.bidking.tw/u/屏東縣屏東市公所.html)
+- [屏東縣恆春鎮公所 招標公告與決標紀錄](https://www.bidking.tw/u/屏東縣恆春鎮公所.html)
+- [屏東縣政府 招標公告與決標紀錄](https://www.bidking.tw/u/屏東縣政府.html)
+- [屏東縣政府環境保護局 招標公告與決標紀錄](https://www.bidking.tw/u/屏東縣政府環境保護局.html)
+- [屏東縣潮州鎮公所 招標公告與決標紀錄](https://www.bidking.tw/u/屏東縣潮州鎮公所.html)
+- [屏東縣獅子鄉公所 招標公告與決標紀錄](https://www.bidking.tw/u/屏東縣獅子鄉公所.html)
+- [屏東縣高樹鄉公所 招標公告與決標紀錄](https://www.bidking.tw/u/屏東縣高樹鄉公所.html)
+- [彰化縣和美鎮公所 招標公告與決標紀錄](https://www.bidking.tw/u/彰化縣和美鎮公所.html)
+- [彰化縣員林市公所 招標公告與決標紀錄](https://www.bidking.tw/u/彰化縣員林市公所.html)
+- [彰化縣彰化市公所 招標公告與決標紀錄](https://www.bidking.tw/u/彰化縣彰化市公所.html)
+- [彰化縣政府 招標公告與決標紀錄](https://www.bidking.tw/u/彰化縣政府.html)
+- [彰化縣文化局 招標公告與決標紀錄](https://www.bidking.tw/u/彰化縣文化局.html)
+- [彰化縣鹿港鎮公所 招標公告與決標紀錄](https://www.bidking.tw/u/彰化縣鹿港鎮公所.html)
+- [教育部 招標公告與決標紀錄](https://www.bidking.tw/u/教育部.html)
+- [文化部 招標公告與決標紀錄](https://www.bidking.tw/u/文化部.html)
+- [文化部文化資產局 招標公告與決標紀錄](https://www.bidking.tw/u/文化部文化資產局.html)
+- [新北市三重區公所 招標公告與決標紀錄](https://www.bidking.tw/u/新北市三重區公所.html)
+- [新北市政府採購處 招標公告與決標紀錄](https://www.bidking.tw/u/新北市政府採購處.html)
+- [新北市政府文化局 招標公告與決標紀錄](https://www.bidking.tw/u/新北市政府文化局.html)
+- [新北市政府消防局 招標公告與決標紀錄](https://www.bidking.tw/u/新北市政府消防局.html)
+- [新北市政府環境保護局 招標公告與決標紀錄](https://www.bidking.tw/u/新北市政府環境保護局.html)
+- [新北市政府社會局 招標公告與決標紀錄](https://www.bidking.tw/u/新北市政府社會局.html)
+- [新北市政府衛生局 招標公告與決標紀錄](https://www.bidking.tw/u/新北市政府衛生局.html)
+- [新北市政府警察局 招標公告與決標紀錄](https://www.bidking.tw/u/新北市政府警察局.html)
+- [新北市政府高灘地工程管理處 招標公告與決標紀錄](https://www.bidking.tw/u/新北市政府高灘地工程管理處.html)
+- [新北市新莊區公所 招標公告與決標紀錄](https://www.bidking.tw/u/新北市新莊區公所.html)
+- [新北市板橋區公所 招標公告與決標紀錄](https://www.bidking.tw/u/新北市板橋區公所.html)
+- [新北市樹林區公所 招標公告與決標紀錄](https://www.bidking.tw/u/新北市樹林區公所.html)
+- [新北市汐止區公所 招標公告與決標紀錄](https://www.bidking.tw/u/新北市汐止區公所.html)
+- [新北市淡水區公所 招標公告與決標紀錄](https://www.bidking.tw/u/新北市淡水區公所.html)
+- [新北市立聯合醫院 招標公告與決標紀錄](https://www.bidking.tw/u/新北市立聯合醫院.html)
+- [新竹市政府 招標公告與決標紀錄](https://www.bidking.tw/u/新竹市政府.html)
+- [新竹市文化局 招標公告與決標紀錄](https://www.bidking.tw/u/新竹市文化局.html)
+- [新竹市環境保護局 招標公告與決標紀錄](https://www.bidking.tw/u/新竹市環境保護局.html)
+- [新竹瓦斯股份有限公司 招標公告與決標紀錄](https://www.bidking.tw/u/新竹瓦斯股份有限公司.html)
+- [新竹縣尖石鄉公所 招標公告與決標紀錄](https://www.bidking.tw/u/新竹縣尖石鄉公所.html)
+- [新竹縣政府 招標公告與決標紀錄](https://www.bidking.tw/u/新竹縣政府.html)
+- [新竹縣政府文化局 招標公告與決標紀錄](https://www.bidking.tw/u/新竹縣政府文化局.html)
+- [新竹縣新豐鄉公所 招標公告與決標紀錄](https://www.bidking.tw/u/新竹縣新豐鄉公所.html)
+- [新竹縣湖口鄉公所 招標公告與決標紀錄](https://www.bidking.tw/u/新竹縣湖口鄉公所.html)
+- [新竹縣竹北市公所 招標公告與決標紀錄](https://www.bidking.tw/u/新竹縣竹北市公所.html)
+- [新竹縣竹東鎮公所 招標公告與決標紀錄](https://www.bidking.tw/u/新竹縣竹東鎮公所.html)
+- [桃園國際機場股份有限公司 招標公告與決標紀錄](https://www.bidking.tw/u/桃園國際機場股份有限公司.html)
+- [桃園大眾捷運股份有限公司 招標公告與決標紀錄](https://www.bidking.tw/u/桃園大眾捷運股份有限公司.html)
+- [桃園市中壢區公所 招標公告與決標紀錄](https://www.bidking.tw/u/桃園市中壢區公所.html)
+- [桃園市八德區公所 招標公告與決標紀錄](https://www.bidking.tw/u/桃園市八德區公所.html)
+- [桃園市平鎮區公所 招標公告與決標紀錄](https://www.bidking.tw/u/桃園市平鎮區公所.html)
+- [桃園市復興區公所 招標公告與決標紀錄](https://www.bidking.tw/u/桃園市復興區公所.html)
+- [桃園市政府工務局 招標公告與決標紀錄](https://www.bidking.tw/u/桃園市政府工務局.html)
+- [桃園市政府文化局 招標公告與決標紀錄](https://www.bidking.tw/u/桃園市政府文化局.html)
+- [桃園市政府水務局 招標公告與決標紀錄](https://www.bidking.tw/u/桃園市政府水務局.html)
+- [桃園市政府消防局 招標公告與決標紀錄](https://www.bidking.tw/u/桃園市政府消防局.html)
+- [桃園市政府環境保護局 招標公告與決標紀錄](https://www.bidking.tw/u/桃園市政府環境保護局.html)
+- [桃園市政府衛生局 招標公告與決標紀錄](https://www.bidking.tw/u/桃園市政府衛生局.html)
+- [桃園市龍潭區公所 招標公告與決標紀錄](https://www.bidking.tw/u/桃園市龍潭區公所.html)
+- [桃園市龜山區公所 招標公告與決標紀錄](https://www.bidking.tw/u/桃園市龜山區公所.html)
+- [法務部 招標公告與決標紀錄](https://www.bidking.tw/u/法務部.html)
+- [法務部調查局 招標公告與決標紀錄](https://www.bidking.tw/u/法務部調查局.html)
+- [海洋委員會海巡署艦隊分署 招標公告與決標紀錄](https://www.bidking.tw/u/海洋委員會海巡署艦隊分署.html)
+- [海洋委員會海洋保育署 招標公告與決標紀錄](https://www.bidking.tw/u/海洋委員會海洋保育署.html)
+- [澎湖縣政府 招標公告與決標紀錄](https://www.bidking.tw/u/澎湖縣政府.html)
+- [環境部 招標公告與決標紀錄](https://www.bidking.tw/u/環境部.html)
+- [立法院 招標公告與決標紀錄](https://www.bidking.tw/u/立法院.html)
+- [經濟部 招標公告與決標紀錄](https://www.bidking.tw/u/經濟部.html)
+- [經濟部工業局 招標公告與決標紀錄](https://www.bidking.tw/u/經濟部工業局.html)
+- [經濟部標準檢驗局 招標公告與決標紀錄](https://www.bidking.tw/u/經濟部標準檢驗局.html)
+- [經濟部水利署 招標公告與決標紀錄](https://www.bidking.tw/u/經濟部水利署.html)
+- [經濟部水利署第七河川分署 招標公告與決標紀錄](https://www.bidking.tw/u/經濟部水利署第七河川分署.html)
+- [經濟部水利署第七河川局 招標公告與決標紀錄](https://www.bidking.tw/u/經濟部水利署第七河川局.html)
+- [經濟部水利署第五河川局 招標公告與決標紀錄](https://www.bidking.tw/u/經濟部水利署第五河川局.html)
+- [經濟部產業園區管理局臺中分局 招標公告與決標紀錄](https://www.bidking.tw/u/經濟部產業園區管理局臺中分局.html)
+- [經濟部產業園區管理局臺北分局 招標公告與決標紀錄](https://www.bidking.tw/u/經濟部產業園區管理局臺北分局.html)
+- [經濟部產業發展署 招標公告與決標紀錄](https://www.bidking.tw/u/經濟部產業發展署.html)
+- [臺中市和平區公所 招標公告與決標紀錄](https://www.bidking.tw/u/臺中市和平區公所.html)
+- [臺中市政府交通局 招標公告與決標紀錄](https://www.bidking.tw/u/臺中市政府交通局.html)
+- [臺中市政府文化局 招標公告與決標紀錄](https://www.bidking.tw/u/臺中市政府文化局.html)
+- [臺中市政府水利局 招標公告與決標紀錄](https://www.bidking.tw/u/臺中市政府水利局.html)
+- [臺中市政府消防局 招標公告與決標紀錄](https://www.bidking.tw/u/臺中市政府消防局.html)
+- [臺中市政府環境保護局 招標公告與決標紀錄](https://www.bidking.tw/u/臺中市政府環境保護局.html)
+- [臺中市政府社會局 招標公告與決標紀錄](https://www.bidking.tw/u/臺中市政府社會局.html)
+- [臺中市政府經濟發展局 招標公告與決標紀錄](https://www.bidking.tw/u/臺中市政府經濟發展局.html)
+- [臺中市政府衛生局 招標公告與決標紀錄](https://www.bidking.tw/u/臺中市政府衛生局.html)
+- [臺中市政府觀光旅遊局 招標公告與決標紀錄](https://www.bidking.tw/u/臺中市政府觀光旅遊局.html)
+- [臺中市新建工程處 招標公告與決標紀錄](https://www.bidking.tw/u/臺中市新建工程處.html)
+- [臺中市養護工程處 招標公告與決標紀錄](https://www.bidking.tw/u/臺中市養護工程處.html)
+- [臺中捷運股份有限公司 招標公告與決標紀錄](https://www.bidking.tw/u/臺中捷運股份有限公司.html)
+- [臺中榮民總醫院 招標公告與決標紀錄](https://www.bidking.tw/u/臺中榮民總醫院.html)
+- [臺中榮民總醫院嘉義分院 招標公告與決標紀錄](https://www.bidking.tw/u/臺中榮民總醫院嘉義分院.html)
+- [臺北大眾捷運股份有限公司 招標公告與決標紀錄](https://www.bidking.tw/u/臺北大眾捷運股份有限公司.html)
+- [臺北市交通管制工程處 招標公告與決標紀錄](https://www.bidking.tw/u/臺北市交通管制工程處.html)
+- [臺北市停車管理工程處 招標公告與決標紀錄](https://www.bidking.tw/u/臺北市停車管理工程處.html)
+- [臺北市市場處 招標公告與決標紀錄](https://www.bidking.tw/u/臺北市市場處.html)
+- [臺北市政府 招標公告與決標紀錄](https://www.bidking.tw/u/臺北市政府.html)
+- [臺北市政府工務局 招標公告與決標紀錄](https://www.bidking.tw/u/臺北市政府工務局.html)
+- [臺北市政府工務局公園路燈工程管理處 招標公告與決標紀錄](https://www.bidking.tw/u/臺北市政府工務局公園路燈工程管理處.html)
+- [臺北市政府工務局大地工程處 招標公告與決標紀錄](https://www.bidking.tw/u/臺北市政府工務局大地工程處.html)
+- [臺北市政府工務局新建工程處 招標公告與決標紀錄](https://www.bidking.tw/u/臺北市政府工務局新建工程處.html)
+- [臺北市政府工務局水利工程處 招標公告與決標紀錄](https://www.bidking.tw/u/臺北市政府工務局水利工程處.html)
+- [臺北市政府文化局 招標公告與決標紀錄](https://www.bidking.tw/u/臺北市政府文化局.html)
+- [臺北市政府民政局 招標公告與決標紀錄](https://www.bidking.tw/u/臺北市政府民政局.html)
+- [臺北市政府消防局 招標公告與決標紀錄](https://www.bidking.tw/u/臺北市政府消防局.html)
+- [臺北市政府環境保護局 招標公告與決標紀錄](https://www.bidking.tw/u/臺北市政府環境保護局.html)
+- [臺北市政府環境保護局北投垃圾焚化廠 招標公告與決標紀錄](https://www.bidking.tw/u/臺北市政府環境保護局北投垃圾焚化廠.html)
+- [臺北市政府社會局 招標公告與決標紀錄](https://www.bidking.tw/u/臺北市政府社會局.html)
+- [臺北市政府衛生局 招標公告與決標紀錄](https://www.bidking.tw/u/臺北市政府衛生局.html)
+- [臺北市政府觀光傳播局 招標公告與決標紀錄](https://www.bidking.tw/u/臺北市政府觀光傳播局.html)
+- [臺北市政府資訊局 招標公告與決標紀錄](https://www.bidking.tw/u/臺北市政府資訊局.html)
+- [臺北市政府都市發展局 招標公告與決標紀錄](https://www.bidking.tw/u/臺北市政府都市發展局.html)
+- [臺北市政府體育局 招標公告與決標紀錄](https://www.bidking.tw/u/臺北市政府體育局.html)
+- [臺北市立動物園 招標公告與決標紀錄](https://www.bidking.tw/u/臺北市立動物園.html)
+- [臺北市立大學 招標公告與決標紀錄](https://www.bidking.tw/u/臺北市立大學.html)
+- [臺北市立大安高級工業職業學校 招標公告與決標紀錄](https://www.bidking.tw/u/臺北市立大安高級工業職業學校.html)
+- [臺北市立美術館 招標公告與決標紀錄](https://www.bidking.tw/u/臺北市立美術館.html)
+- [臺北市立聯合醫院 招標公告與決標紀錄](https://www.bidking.tw/u/臺北市立聯合醫院.html)
+- [臺北榮民總醫院 招標公告與決標紀錄](https://www.bidking.tw/u/臺北榮民總醫院.html)
+- [臺北榮民總醫院玉里分院 招標公告與決標紀錄](https://www.bidking.tw/u/臺北榮民總醫院玉里分院.html)
+- [臺北自來水事業處 招標公告與決標紀錄](https://www.bidking.tw/u/臺北自來水事業處.html)
+- [臺南市南化區公所 招標公告與決標紀錄](https://www.bidking.tw/u/臺南市南化區公所.html)
+- [臺南市左鎮區公所 招標公告與決標紀錄](https://www.bidking.tw/u/臺南市左鎮區公所.html)
+- [臺南市政府 招標公告與決標紀錄](https://www.bidking.tw/u/臺南市政府.html)
+- [臺南市政府交通局 招標公告與決標紀錄](https://www.bidking.tw/u/臺南市政府交通局.html)
+- [臺南市政府工務局 招標公告與決標紀錄](https://www.bidking.tw/u/臺南市政府工務局.html)
+- [臺南市政府文化局 招標公告與決標紀錄](https://www.bidking.tw/u/臺南市政府文化局.html)
+- [臺南市政府水利局 招標公告與決標紀錄](https://www.bidking.tw/u/臺南市政府水利局.html)
+- [臺南市政府消防局 招標公告與決標紀錄](https://www.bidking.tw/u/臺南市政府消防局.html)
+- [臺南市政府環境保護局 招標公告與決標紀錄](https://www.bidking.tw/u/臺南市政府環境保護局.html)
+- [臺南市政府社會局 招標公告與決標紀錄](https://www.bidking.tw/u/臺南市政府社會局.html)
+- [臺南市政府觀光旅遊局 招標公告與決標紀錄](https://www.bidking.tw/u/臺南市政府觀光旅遊局.html)
+- [臺南市政府農業局 招標公告與決標紀錄](https://www.bidking.tw/u/臺南市政府農業局.html)
+- [臺南市新化區公所 招標公告與決標紀錄](https://www.bidking.tw/u/臺南市新化區公所.html)
+- [臺南市東山區公所 招標公告與決標紀錄](https://www.bidking.tw/u/臺南市東山區公所.html)
+- [臺南市楠西區公所 招標公告與決標紀錄](https://www.bidking.tw/u/臺南市楠西區公所.html)
+- [臺南市永康區公所 招標公告與決標紀錄](https://www.bidking.tw/u/臺南市永康區公所.html)
+- [臺南市白河區公所 招標公告與決標紀錄](https://www.bidking.tw/u/臺南市白河區公所.html)
+- [臺南市關廟區公所 招標公告與決標紀錄](https://www.bidking.tw/u/臺南市關廟區公所.html)
+- [臺南市龍崎區公所 招標公告與決標紀錄](https://www.bidking.tw/u/臺南市龍崎區公所.html)
+- [臺東縣政府 招標公告與決標紀錄](https://www.bidking.tw/u/臺東縣政府.html)
+- [臺灣土地銀行股份有限公司 招標公告與決標紀錄](https://www.bidking.tw/u/臺灣土地銀行股份有限公司.html)
+- [臺灣港務股份有限公司 招標公告與決標紀錄](https://www.bidking.tw/u/臺灣港務股份有限公司.html)
+- [臺灣港務股份有限公司基隆港務分公司 招標公告與決標紀錄](https://www.bidking.tw/u/臺灣港務股份有限公司基隆港務分公司.html)
+- [臺灣港務股份有限公司臺中港務分公司 招標公告與決標紀錄](https://www.bidking.tw/u/臺灣港務股份有限公司臺中港務分公司.html)
+- [臺灣港務股份有限公司高雄港務分公司 招標公告與決標紀錄](https://www.bidking.tw/u/臺灣港務股份有限公司高雄港務分公司.html)
+- [臺灣糖業股份有限公司生物科技事業部 招標公告與決標紀錄](https://www.bidking.tw/u/臺灣糖業股份有限公司生物科技事業部.html)
+- [臺灣糖業股份有限公司畜殖事業部 招標公告與決標紀錄](https://www.bidking.tw/u/臺灣糖業股份有限公司畜殖事業部.html)
+- [臺灣糖業股份有限公司砂糖事業部 招標公告與決標紀錄](https://www.bidking.tw/u/臺灣糖業股份有限公司砂糖事業部.html)
+- [臺灣菸酒股份有限公司 招標公告與決標紀錄](https://www.bidking.tw/u/臺灣菸酒股份有限公司.html)
+- [臺灣菸酒股份有限公司烏日啤酒廠 招標公告與決標紀錄](https://www.bidking.tw/u/臺灣菸酒股份有限公司烏日啤酒廠.html)
+- [臺灣菸酒股份有限公司竹南啤酒廠 招標公告與決標紀錄](https://www.bidking.tw/u/臺灣菸酒股份有限公司竹南啤酒廠.html)
+- [臺灣菸酒股份有限公司豐原捲菸研發製造工廠 招標公告與決標紀錄](https://www.bidking.tw/u/臺灣菸酒股份有限公司豐原捲菸研發製造工廠.html)
+- [臺灣銀行股份有限公司 招標公告與決標紀錄](https://www.bidking.tw/u/臺灣銀行股份有限公司.html)
+- [花蓮縣吉安鄉公所 招標公告與決標紀錄](https://www.bidking.tw/u/花蓮縣吉安鄉公所.html)
+- [花蓮縣政府 招標公告與決標紀錄](https://www.bidking.tw/u/花蓮縣政府.html)
+- [花蓮縣秀林鄉公所 招標公告與決標紀錄](https://www.bidking.tw/u/花蓮縣秀林鄉公所.html)
+- [花蓮縣花蓮市公所 招標公告與決標紀錄](https://www.bidking.tw/u/花蓮縣花蓮市公所.html)
+- [花蓮縣豐濱鄉公所 招標公告與決標紀錄](https://www.bidking.tw/u/花蓮縣豐濱鄉公所.html)
+- [苗栗縣大湖鄉公所 招標公告與決標紀錄](https://www.bidking.tw/u/苗栗縣大湖鄉公所.html)
+- [苗栗縣政府 招標公告與決標紀錄](https://www.bidking.tw/u/苗栗縣政府.html)
+- [苗栗縣泰安鄉公所 招標公告與決標紀錄](https://www.bidking.tw/u/苗栗縣泰安鄉公所.html)
+- [苗栗縣竹南鎮公所 招標公告與決標紀錄](https://www.bidking.tw/u/苗栗縣竹南鎮公所.html)
+- [苗栗縣苑裡鎮公所 招標公告與決標紀錄](https://www.bidking.tw/u/苗栗縣苑裡鎮公所.html)
+- [苗栗縣苗栗市公所 招標公告與決標紀錄](https://www.bidking.tw/u/苗栗縣苗栗市公所.html)
+- [苗栗縣通霄鎮公所 招標公告與決標紀錄](https://www.bidking.tw/u/苗栗縣通霄鎮公所.html)
+- [苗栗縣頭份市公所 招標公告與決標紀錄](https://www.bidking.tw/u/苗栗縣頭份市公所.html)
+- [行政院原子能委員會核能研究所 招標公告與決標紀錄](https://www.bidking.tw/u/行政院原子能委員會核能研究所.html)
+- [行政院環境保護署 招標公告與決標紀錄](https://www.bidking.tw/u/行政院環境保護署.html)
+- [行政院農業委員會家畜衛生試驗所 招標公告與決標紀錄](https://www.bidking.tw/u/行政院農業委員會家畜衛生試驗所.html)
+- [行政院農業委員會林務局嘉義林區管理處 招標公告與決標紀錄](https://www.bidking.tw/u/行政院農業委員會林務局嘉義林區管理處.html)
+- [行政院農業委員會水土保持局南投分局 招標公告與決標紀錄](https://www.bidking.tw/u/行政院農業委員會水土保持局南投分局.html)
+- [行政院農業委員會水土保持局臺中分局 招標公告與決標紀錄](https://www.bidking.tw/u/行政院農業委員會水土保持局臺中分局.html)
+- [行政院農業委員會水土保持局臺北分局 招標公告與決標紀錄](https://www.bidking.tw/u/行政院農業委員會水土保持局臺北分局.html)
+- [行政院農業委員會水土保持局臺南分局 招標公告與決標紀錄](https://www.bidking.tw/u/行政院農業委員會水土保持局臺南分局.html)
+- [行政院農業委員會農業試驗所 招標公告與決標紀錄](https://www.bidking.tw/u/行政院農業委員會農業試驗所.html)
+- [行政院農業委員會農田水利署 招標公告與決標紀錄](https://www.bidking.tw/u/行政院農業委員會農田水利署.html)
+- [衛生福利部 招標公告與決標紀錄](https://www.bidking.tw/u/衛生福利部.html)
+- [衛生福利部中央健康保險署 招標公告與決標紀錄](https://www.bidking.tw/u/衛生福利部中央健康保險署.html)
+- [衛生福利部南投醫院 招標公告與決標紀錄](https://www.bidking.tw/u/衛生福利部南投醫院.html)
+- [衛生福利部國民健康署 招標公告與決標紀錄](https://www.bidking.tw/u/衛生福利部國民健康署.html)
+- [衛生福利部基隆醫院 招標公告與決標紀錄](https://www.bidking.tw/u/衛生福利部基隆醫院.html)
+- [衛生福利部屏東醫院 招標公告與決標紀錄](https://www.bidking.tw/u/衛生福利部屏東醫院.html)
+- [衛生福利部彰化醫院 招標公告與決標紀錄](https://www.bidking.tw/u/衛生福利部彰化醫院.html)
+- [衛生福利部旗山醫院 招標公告與決標紀錄](https://www.bidking.tw/u/衛生福利部旗山醫院.html)
+- [衛生福利部桃園醫院 招標公告與決標紀錄](https://www.bidking.tw/u/衛生福利部桃園醫院.html)
+- [衛生福利部疾病管制署 招標公告與決標紀錄](https://www.bidking.tw/u/衛生福利部疾病管制署.html)
+- [衛生福利部社會及家庭署 招標公告與決標紀錄](https://www.bidking.tw/u/衛生福利部社會及家庭署.html)
+- [衛生福利部臺中醫院 招標公告與決標紀錄](https://www.bidking.tw/u/衛生福利部臺中醫院.html)
+- [衛生福利部臺北醫院 招標公告與決標紀錄](https://www.bidking.tw/u/衛生福利部臺北醫院.html)
+- [衛生福利部臺南醫院 招標公告與決標紀錄](https://www.bidking.tw/u/衛生福利部臺南醫院.html)
+- [衛生福利部苗栗醫院 招標公告與決標紀錄](https://www.bidking.tw/u/衛生福利部苗栗醫院.html)
+- [衛生福利部豐原醫院 招標公告與決標紀錄](https://www.bidking.tw/u/衛生福利部豐原醫院.html)
+- [衛生福利部金門醫院 招標公告與決標紀錄](https://www.bidking.tw/u/衛生福利部金門醫院.html)
+- [衛生福利部食品藥物管理署 招標公告與決標紀錄](https://www.bidking.tw/u/衛生福利部食品藥物管理署.html)
+- [財團法人中華民國對外貿易發展協會 招標公告與決標紀錄](https://www.bidking.tw/u/財團法人中華民國對外貿易發展協會.html)
+- [財團法人農業科技研究院 招標公告與決標紀錄](https://www.bidking.tw/u/財團法人農業科技研究院.html)
+- [農業部林業及自然保育署嘉義分署 招標公告與決標紀錄](https://www.bidking.tw/u/農業部林業及自然保育署嘉義分署.html)
+- [農業部農村發展及水土保持署南投分署 招標公告與決標紀錄](https://www.bidking.tw/u/農業部農村發展及水土保持署南投分署.html)
+- [農業部農村發展及水土保持署臺中分署 招標公告與決標紀錄](https://www.bidking.tw/u/農業部農村發展及水土保持署臺中分署.html)
+- [農業部農村發展及水土保持署臺北分署 招標公告與決標紀錄](https://www.bidking.tw/u/農業部農村發展及水土保持署臺北分署.html)
+- [農業部農村發展及水土保持署臺南分署 招標公告與決標紀錄](https://www.bidking.tw/u/農業部農村發展及水土保持署臺南分署.html)
+- [農業部農田水利署 招標公告與決標紀錄](https://www.bidking.tw/u/農業部農田水利署.html)
+- [連江縣政府 招標公告與決標紀錄](https://www.bidking.tw/u/連江縣政府.html)
+- [金門縣採購招標所 招標公告與決標紀錄](https://www.bidking.tw/u/金門縣採購招標所.html)
+- [金門縣政府 招標公告與決標紀錄](https://www.bidking.tw/u/金門縣政府.html)
+- [雲林縣口湖鄉公所 招標公告與決標紀錄](https://www.bidking.tw/u/雲林縣口湖鄉公所.html)
+- [雲林縣古坑鄉公所 招標公告與決標紀錄](https://www.bidking.tw/u/雲林縣古坑鄉公所.html)
+- [雲林縣政府 招標公告與決標紀錄](https://www.bidking.tw/u/雲林縣政府.html)
+- [雲林縣斗六市公所 招標公告與決標紀錄](https://www.bidking.tw/u/雲林縣斗六市公所.html)
+- [雲林縣虎尾鎮公所 招標公告與決標紀錄](https://www.bidking.tw/u/雲林縣虎尾鎮公所.html)
+- [雲林縣警察局 招標公告與決標紀錄](https://www.bidking.tw/u/雲林縣警察局.html)
+- [駐外機構 招標公告與決標紀錄](https://www.bidking.tw/u/駐外機構.html)
+- [高雄市政府交通局 招標公告與決標紀錄](https://www.bidking.tw/u/高雄市政府交通局.html)
+- [高雄市政府工務局 招標公告與決標紀錄](https://www.bidking.tw/u/高雄市政府工務局.html)
+- [高雄市政府工務局公園處 招標公告與決標紀錄](https://www.bidking.tw/u/高雄市政府工務局公園處.html)
+- [高雄市政府工務局新建工程處 招標公告與決標紀錄](https://www.bidking.tw/u/高雄市政府工務局新建工程處.html)
+- [高雄市政府工務局道路養護工程處 招標公告與決標紀錄](https://www.bidking.tw/u/高雄市政府工務局道路養護工程處.html)
+- [高雄市政府工務局養護工程處 招標公告與決標紀錄](https://www.bidking.tw/u/高雄市政府工務局養護工程處.html)
+- [高雄市政府文化局 招標公告與決標紀錄](https://www.bidking.tw/u/高雄市政府文化局.html)
+- [高雄市政府水利局 招標公告與決標紀錄](https://www.bidking.tw/u/高雄市政府水利局.html)
+- [高雄市政府海洋局 招標公告與決標紀錄](https://www.bidking.tw/u/高雄市政府海洋局.html)
+- [高雄市政府環境保護局 招標公告與決標紀錄](https://www.bidking.tw/u/高雄市政府環境保護局.html)
+- [高雄市政府社會局 招標公告與決標紀錄](https://www.bidking.tw/u/高雄市政府社會局.html)
+- [高雄市政府經濟發展局 招標公告與決標紀錄](https://www.bidking.tw/u/高雄市政府經濟發展局.html)
+- [高雄市政府觀光局 招標公告與決標紀錄](https://www.bidking.tw/u/高雄市政府觀光局.html)
+- [高雄市政府運動發展局 招標公告與決標紀錄](https://www.bidking.tw/u/高雄市政府運動發展局.html)
+- [高雄市立凱旋醫院 招標公告與決標紀錄](https://www.bidking.tw/u/高雄市立凱旋醫院.html)
+- [高雄市立民生醫院 招標公告與決標紀錄](https://www.bidking.tw/u/高雄市立民生醫院.html)
+- [高雄市立聯合醫院 招標公告與決標紀錄](https://www.bidking.tw/u/高雄市立聯合醫院.html)
+- [高雄榮民總醫院 招標公告與決標紀錄](https://www.bidking.tw/u/高雄榮民總醫院.html)
+
+## 近期即將截止投標（200 件）
+- 金湖鎮赤后山南側既有設施維護改善工程-植栽綠美化｜金門縣林務所｜財物類｜預算 780 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc0NjE
+- 久安國小114-116年老舊廁所整修工程｜雲林縣斗六市久安國民小學｜工程類｜預算 209 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcyNjg
+- 攜帶型噴霧機2年單價開口契約｜臺北榮民總醫院｜財物類｜預算 89 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY4OTI
+- 嘉義縣朴子市朴子國民小學辦理115年汰舊換新身心障礙學生交通車採購｜嘉義縣朴子市朴子國民小學｜財物類｜預算 216 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY3ODY
+- 淡水信義線及松山新店線配電盤系統設備維護工作｜臺北大眾捷運股份有限公司｜勞務類｜預算 1,894 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY2NTI
+- 補脂槍1組採購案｜國立臺灣大學醫學院附設醫院｜財物類｜預算 74 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcyNzM
+- 臺中市豐原區翁子國民小學114年度北棟老舊廁所整修工程採購案｜臺中市豐原區翁子國民小學｜工程類｜預算 355 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc0MjQ
+- 火炎山、綠島、仁愛等9站UPS不斷電系統電池汰換及修繕作業｜財團法人原住民族文化事業基金會｜財物類｜預算 200 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc0NDk
+- 115年度高雄市區道路附屬設施修繕及緊急搶修工程第4標(開口契約)｜高雄市政府工務局道路養護工程處｜工程類｜預算 2,279 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTIyMTI
+- 臺北市立關渡醫院第四次委託經營案｜臺北市政府衛生局｜勞務類｜預算 —｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY5NjI
+- 池上營運所115年度管線設備維修工程（開口契約）等2件工程｜台灣自來水股份有限公司第十區管理處｜工程類｜預算 2,864 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY5NDc
+- 「新北市美術館節慶入口意象藝術燈光裝置採購案」｜新北市美術館｜勞務類｜預算 460 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc2Mzc
+- 辦公大樓室內裝修工程｜桃園國際機場股份有限公司｜工程類｜預算 5.92 億｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEyNjgwNDk
+- 莿桐鄉115年度長青食堂中央廚房第2次委外經營管理｜雲林縣莿桐鄉公所｜勞務類｜預算 619 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc0MDQ
+- 影像分析儀乙臺｜國防部軍備局生產製造中心｜財物類｜預算 378 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcyODM
+- 115-117年一次性軟式影像輸尿管腎鏡及導引鞘開口合約招標案｜國立臺灣大學醫學院附設醫院｜財物類｜預算 1,573 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcxNjM
+- 北辰國小114年度東二棟廁所整修工程｜雲林縣北港鎮北辰國民小學｜工程類｜預算 183 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTIyODI
+- 新北市汐止區樟樹國小敦品勵學樓東側廁所整修工程採購案｜新北市汐止區樟樹國民小學｜工程類｜預算 491 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc0MDk
+- Danas-H-01-07-10-賓茂村產業道路ABCD工區災害復建工程｜臺東縣金峰鄉公所｜工程類｜預算 289 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTU4NTc
+- 115年度毒品犯嫌尿液檢體第2次委外檢驗開口契約採購案｜雲林縣警察局｜勞務類｜預算 152 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc3MDA
+- 測力板系統｜臺北市立大學｜財物類｜預算 80 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcwNzk
+- 2027年Communication Abstracts與Historical Abstracts with Full Text資料庫｜國立政治大學｜財物類｜預算 70 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc2MzE
+- 體能測試儀器設備｜嘉藥學校財團法人嘉南藥理大學｜財物類｜預算 22 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcyNTQ
+- 115059-115-FR-36-3-001大鞍杜崙農路改善工程｜南投縣竹山鎮公所｜工程類｜預算 179 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc1Mzk
+- 南澳南溪（橫山橋上游段）清疏工程｜宜蘭縣政府｜工程類｜預算 777 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc0Njk
+- 教學設備支持計畫-一般教學｜臺北市立大學｜財物類｜預算 105 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcwODI
+- 中壢段116年台15、台31線預約及北分局轄區備援災害搶修及修復工程｜交通部公路局北區養護工程分局｜工程類｜預算 273 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY5MTc
+- 「116-117年度六堆園區館舍電子保全系統」勞務採購案｜客家委員會客家文化發展中心｜勞務類｜預算 124 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcwNzU
+- 115年教師宿舍電熱水器與空調設備更新及增設採購案｜宜蘭縣立南澳高級中學｜財物類｜預算 100 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc3MTU
+- 新北市AI應用與數位設計中心空間設計裝修統包工程採購案｜新北市立鶯歌高級工商職業學校｜工程類｜預算 206 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY5NzU
+- 陶工科雙美未計畫空間設計裝修統包工程採購案｜新北市立鶯歌高級工商職業學校｜工程類｜預算 327 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcwMTM
+- 115-116年度注儲處設備元件VOC減量維修工作｜台灣中油股份有限公司探採事業部｜勞務類｜預算 299 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc4MTY
+- 蘆竹區116年度橋梁修繕及補強工程(開口契約)｜桃園市蘆竹區公所｜工程類｜預算 628 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcyMTE
+- 槍袋總成等3項｜國防部軍備局生產製造中心｜財物類｜預算 174 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcyODk
+- 龍騰館冷氣及相關環境設施改善工程｜桃園市龍潭區雙龍國民小學｜工程類｜預算 201 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTYxOTc
+- 116年度彰化地磅站委託營運管理工作｜交通部公路局中區養護工程分局｜勞務類｜預算 430 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNDU5NTg
+- 金湖鎮塔后社區活動中心周邊環境整建工程｜金門縣金湖鎮公所｜工程類｜預算 4,073 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc0NzI
+- 116年度TSC藍芽印表機維護案｜臺北市政府警察局｜勞務類｜預算 80 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc1OTI
+- 資訊館建築能效改善工程委託測試調整平衡(TAB)案｜國立花蓮高級商業職業學校｜勞務類｜預算 48 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcwODA
+- 116-117年度健康管理中心餐盒開口契約｜國立陽明交通大學附設醫院｜財物類｜預算 74 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTgwMDU
+- 教職員工職務宿舍區建物拆除工程｜國立岡山高級農工職業學校｜工程類｜預算 357 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNDc2NDg
+- 116-117年保育巡護暨苗圃營運業務委外服務案｜內政部國家公園署台江國家公園管理處｜勞務類｜預算 955 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/prkms/tender/common/noticeDate/redirectPublic?ds=20261020&fn=TIQ-4-71132039.xml
+- 頭屋國中114-116年公立國民中小學老舊廁所整修工程計畫(第二批) 委託規劃設計監造案｜苗栗縣立頭屋國民中學｜勞務類｜預算 17 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY3ODI
+- 嘉義縣立中埔國民中學地坪、排水改善工程｜嘉義縣立中埔國民中學｜工程類｜預算 82 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc2NjQ
+- 永靖鄉永坡路131號道路側溝改善工程｜彰化縣永靖鄉公所｜工程類｜預算 46 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTAwNDQ
+- 115-2大專校院及高級中等學校肢障學生教育輔具-坐姿擺位類輔具｜中山醫學大學附設醫院｜財物類｜預算 —｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTExMjE
+- B1樓增設儲油槽及管路工程｜輔仁大學學校財團法人輔仁大學附設醫院｜工程類｜預算 500 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTI2MTE
+- 116年度臺中市養護工程處屯區工程隊公園景觀改善工程委託設計監造｜臺中市養護工程處｜勞務類｜預算 572 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/prkms/tender/common/noticeDate/redirectPublic?ds=20261020&fn=TIQ-4-71134722.xml
+- 115年度測量課檔案庫房無酸檔案盒財物採購案｜新竹縣竹東地政事務所｜財物類｜預算 65 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTIzMzY
+- 115年度幼兒園充實及改善教學環境設施設備計畫案(教具及桌椅櫃體採購)｜臺中市立太平幼兒園｜財物類｜預算 319 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTMyMDU
+- 鹽埔國中東大樓北側廁所整修工程｜屏東縣立鹽埔國民中學｜工程類｜預算 540 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTQzOTM
+- 115年桃廠R2/3H/4-5S工場大修現場儀器校正檢修工作｜台灣中油股份有限公司｜勞務類｜預算 1,000 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTQ2NDI
+- 社會科學院一樓階梯教室課桌椅汰換案｜東海大學｜財物類｜預算 472 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTU1NjM
+- 無塵無菌(含負壓)儀電設備維護保養檢測｜衛生福利部基隆醫院｜勞務類｜預算 869 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTU1ODM
+- 116年消防設備維護案｜國防部空軍司令部｜勞務類｜預算 40 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTIxMzU
+- 115學年度三年級戶外教育委託服務採購案｜新北市林口區新林國民小學｜勞務類｜預算 24 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTU0MjE
+- 無線網路基地台50台｜高雄榮民總醫院｜財物類｜預算 136 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTQ4MTg
+- 午餐廚房設備財物採購案｜臺南市立大成國民中學｜財物類｜預算 45 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTQ5NTc
+- 中正國小115年數位相機設備(固定金額)｜金門縣金城鎮中正國民小學｜財物類｜預算 18 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTU3MzU
+- 115年身心障礙個案管理服務系統資安防護強化案｜衛生福利部社會及家庭署｜勞務類｜預算 140 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTU3NjE
+- 115年度圖書｜高雄市立新莊高級中學｜財物類｜預算 32 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTYyMzc
+- 115年度資訊設備(平板電腦)財物採購案｜臺北市立敦化國民中學｜財物類｜預算 54 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY1MjM
+- 重鋇（重質硫酸鋇） 一批｜台灣中油股份有限公司｜財物類｜預算 124 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTYyMzU
+- 製圖科設備「雷射切割機及3D列印機」｜國立羅東高級工業職業學校｜財物類｜預算 26 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY4OTM
+- -80℃變頻雙獨立系統超低溫冷凍櫃1台｜臺北榮民總醫院｜財物類｜預算 50 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcwMTA
+- 115年綠能所化學品及溶劑｜台灣中油股份有限公司｜財物類｜預算 52 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcxMTk
+- 影像儲存系統之儲存設備1台｜臺北榮民總醫院｜財物類｜預算 87 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc4NjM
+- 液面作動開關配件( MAGNETROL)｜台灣中油股份有限公司｜財物類｜預算 149 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc1MjA
+- 影像式困難插管鏡組之3號葉片｜臺北市立聯合醫院｜財物類｜預算 25 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc2MTE
+- 116年度電子卷證委外掃描勞務採購｜臺灣高等法院臺南分院｜勞務類｜預算 113 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTA2MjM
+- 116年度報紙採購｜臺灣高等法院臺南分院｜財物類｜預算 16 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTA2NDA
+- 永豐國小115年非山非市設施改善工程－活動中心室內裝修統包工程｜花蓮縣富里鄉永豐國民小學｜工程類｜預算 —｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTYwNTY
+- 室內地板裝修工程｜國防部軍事情報局｜工程類｜預算 50 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTYzMTY
+- 115學年度第1學期學校午餐外訂餐盒採購案｜臺北市立成淵高級中學｜財物類｜預算 150 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTYzNjE
+- 南陽國小115學年六年級校外教學活動服務｜雲林縣北港鎮南陽國民小學｜勞務類｜預算 44 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY2Mjg
+- 卡大地布少年聚會所修繕工程-傳統建材採購案｜臺東縣臺東市公所｜財物類｜預算 22 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY2NTQ
+- 116年1月至12月預約式遊覽車租賃勞務採購案｜臺北市北投區文林國民小學｜勞務類｜預算 64 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY4Mjc
+- 增建明德樓外掛式無障礙電梯委託技術服務｜新北市立永和國民中學｜勞務類｜預算 73 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY4MzA
+- 活動中心羽球地墊跳高墊採購｜國立屏東女子高級中學｜財物類｜預算 35 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY5ODM
+- 屏東縣長樂國小115年度改善無障礙校園環境計畫-新建無障礙電梯委託規劃設計暨監造技術服務｜屏東縣滿州鄉長樂國民小學｜勞務類｜預算 40 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcwMDg
+- 116年度租賃公務車3輛｜經濟部水利署｜財物類｜預算 143 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcwMjQ
+- 116年度公務車租車(含駕駛)勞務採購案｜高雄市政府都市發展局｜勞務類｜預算 43 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcwMjI
+- 115年11月至116年底校園警衛人員委託專業服務｜新北市板橋區新埔國民小學｜勞務類｜預算 134 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcwMjk
+- 人體工學記憶枕｜臺中榮民總醫院｜財物類｜預算 25 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcwNDQ
+- 116年桃園市政府住宅發展處法律諮詢案（開口合約）｜桃園市政府住宅發展及都市更新處｜勞務類｜預算 50 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcwNzE
+- 115年度老舊廁所整修工程第2批委託技術服務勞務採購｜苗栗縣竹南鎮海口國民小學｜勞務類｜預算 19 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcxMjg
+- 百韜樓鍋爐間整修工程｜國防大學｜工程類｜預算 136 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcxNTU
+- 支氣管內管阻隔器2年單價開口契約｜臺北榮民總醫院｜財物類｜預算 50 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcyNDY
+- 新北市鶯歌區116年度各市民活動中心等修繕工程委託設計監造技術服務案(開口契約)｜新北市鶯歌區公所｜勞務類｜預算 69 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcyNjI
+- 新竹市立光武國中校門既有透水鋪面刨除及柏油鋪設｜新竹市立光武國民中學｜工程類｜預算 31 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcyNzY
+- 校內空調送風機及出風口清潔保養採購案｜光宇學校財團法人元培醫事科技大學｜勞務類｜預算 94 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcyNzk
+- 115年桃園市創新科技特色課程發展計畫設備採購案｜桃園市立陽明高級中等學校｜財物類｜預算 41 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTczMDQ
+- 116年防疫檢體及物品運送採購案｜嘉義市政府衛生局｜勞務類｜預算 30 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTczMDc
+- 115年度潮州鎮路燈桿更換財物採購帶安裝案｜屏東縣潮州鎮公所｜財物類｜預算 60 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTczMTQ
+- 車廂地板皮黏膠採購｜臺北大眾捷運股份有限公司｜財物類｜預算 —｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTczMTU
+- 115年「自強樓浴室增設通風設備」工程｜國軍退除役官兵輔導委員會退除役官兵職業訓練中心｜工程類｜預算 30 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTczMzg
+- 廚餘清運｜國防部空軍司令部｜勞務類｜預算 96 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTczNzM
+- 「115年浮光掠影.映像西拉雅：西拉雅族影像展」移展勞務採購案｜原住民族委員會原住民族文化發展中心｜勞務類｜預算 115 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc0MjA
+- 「六堆客家山歌音檔採集計畫」委託專業服務採購案｜客家委員會客家文化發展中心｜勞務類｜預算 148 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc0ODM
+- 號誌月台門設備外觀維護噴漆工作｜臺北大眾捷運股份有限公司｜勞務類｜預算 150 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc0OTc
+- 「智慧羽球示範場域建置及驗證服務案」採購案｜國家運動產業發展中心｜勞務類｜預算 145 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc1NDM
+- AI軟體授權案｜國家資通安全研究院｜財物類｜預算 125 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc1NjU
+- 2026福爾摩沙國際韻律體操邀請賽住宿飯店｜國立臺灣體育運動大學｜勞務類｜預算 60 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc1ODA
+- 116年度「薪資管理資訊系統維護案」｜衛生福利部食品藥物管理署｜勞務類｜預算 48 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc1OTQ
+- 管樂及國樂之樂器財物採購｜國立臺南第一高級中學｜財物類｜預算 39 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc1OTY
+- 115年度改善無障礙校園環境計畫｜桃園市龜山區長庚國民小學｜工程類｜預算 83 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc3MTY
+- 南機廠既有廁所更改淋浴間蓋善裝修工作｜新北大眾捷運股份有限公司｜勞務類｜預算 26 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc3MzQ
+- 「114-116年公立國民中學小學老舊廁所整修工程(第2批)-規劃設計」委託規劃設計及監造服務｜南投縣立三光國民中學｜勞務類｜預算 15 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc3Mzg
+- 115年度補助基層運動選手訓練站改善訓練環境及器材設備｜桃園市桃園區青溪國民小學｜財物類｜預算 73 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc3NjU
+- 臺中市大雅區上楓國民小學辦理平板電腦採購案｜臺中市大雅區上楓國民小學｜財物類｜預算 46 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc4MTQ
+- 宜蘭縣羅東鎮立體停車場排水管線改善工程｜宜蘭縣羅東鎮公所｜工程類｜預算 129 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc4Mjc
+- 115學年度管理大樓二樓教室隔間整修工程採購案｜私立真理大學｜工程類｜預算 94 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc4Mjg
+- 115學年度工科技藝競賽-應用設計職種配電及工作崗位設置採購案｜國立臺北科技大學附屬桃園農工高級中等學校｜勞務類｜預算 —｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc4NDI
+- 115學年度高中優質化暨擴增雙語實驗班計畫-教學設備｜國立新港藝術高級中學｜財物類｜預算 46 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc4NjA
+- 福元公園公有停車場委託經營管理（115年至119年）｜桃園市桃園區公所｜勞務類｜預算 143 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc4ODM
+- 牙技科折合桌等｜樹人醫護管理專科學校｜財物類｜預算 36 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc4OTY
+- 興安國小活動中心籃球場整修設計監造勞務採購｜嘉義市興安國民小學｜勞務類｜預算 49 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc5MDE
+- 牙技科牙科用快速結晶爐｜樹人醫護管理專科學校｜財物類｜預算 40 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc5MDg
+- 應英科全自動咖啡機｜樹人醫護管理專科學校｜財物類｜預算 17 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc5MTM
+- 115年汙水及排水系統建置暨改善工程計畫｜國立新港藝術高級中學｜工程類｜預算 73 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc5NDc
+- 苗栗縣三灣國小115年度活動中心音響燈光修繕財務採購案｜苗栗縣三灣鄉三灣國民小學｜財物類｜預算 78 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc5NzA
+- 115年度特殊教育班大型互動觸控顯示器採購｜新竹縣竹北市竹仁國民小學｜財物類｜預算 45 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc4OTM
+- 臺灣運動產業市場趨勢及產值分析案 採購案｜國家運動產業發展中心｜勞務類｜預算 100 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc2Mzk
+- 115年度校園網路優化採購案｜國立岡山高級農工職業學校｜財物類｜預算 121 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc5NTQ
+- 監察院「115年AI賦能公務培力種子實作課程採購案」｜監察院｜勞務類｜預算 45 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc5OTM
+- 思源樓117病房增設一般照明燈具及電源插座｜臺北榮民總醫院｜勞務類｜預算 80 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY5MzI
+- 115年度校外教學活動｜屏東縣新園鄉烏龍國民小學｜勞務類｜預算 38 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcwNTk
+- 2027年UDB-COM與UDB-EDU資料庫｜國立政治大學｜財物類｜預算 44 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY5NzQ
+- 臺南市西門實驗小學115年基層運動選手訓練站改善訓練環境及器材設備財物採購｜臺南市安平區西門實驗小學｜財物類｜預算 58 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcyNzc
+- 115學年度六年級校外教學｜高雄市美濃區中壇國民小學｜勞務類｜預算 20 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcyNDE
+- 新東國中115年正心樓三樓視聽教室天花板維修工程｜臺南市立新東國民中學｜工程類｜預算 76 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcwODg
+- 金鼎國小115學年度六年級校外教學活動(固定單價決標)｜金門縣採購招標所｜勞務類｜預算 80 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTczMzM
+- 敗血症多標的核酸檢測試劑組開口合約。｜國立臺灣大學醫學院附設醫院｜財物類｜預算 117 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc1Njg
+- 資訊圖書處資訊組交換器教學設備採購案｜廣亞學校財團法人育達科技大學｜財物類｜預算 —｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc4MjE
+- 柏村國小115年美感教育計畫─「藝文館所體驗計畫」(固定單價決標)｜金門縣採購招標所｜勞務類｜預算 46 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcyMDI
+- 北竿潛在藝術展場調研暨島嶼創作計畫｜連江縣政府｜勞務類｜預算 150 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcwNDY
+- 金門縣立金城國民中學116級畢業紀念冊及畢業生團體照財物採購｜金門縣採購招標所｜財物類｜預算 20 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY0MTU
+- 臺灣土地銀行股份有限公司通霄分公司膳食外包勞務承攬｜臺灣土地銀行股份有限公司｜勞務類｜預算 27 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY1OTk
+- 農糧淨零人才培力及策略應用｜農業部農糧署｜勞務類｜預算 65 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc4NTU
+- 115年度竹仔坑國小附設幼兒園改善及充實教學環境設施設備財務採購案｜臺中市大里區竹仔坑國民小學｜財物類｜預算 132 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTczOTI
+- 臺中市南屯區東興國小115學年度二、四、六年級戶外教育活動採購案｜臺中市南屯區東興國民小學｜勞務類｜預算 143 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcxMTQ
+- 立人國中115學年度七年級可調式課桌椅採購案｜臺中市立立人國民中學｜財物類｜預算 60 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTczNDE
+- 高義里雪霧鬧7鄰巷道路面及排水改善工程｜桃園市復興區公所｜工程類｜預算 135 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTczOTE
+- 115學年度六年級戶外教育教學活動採購案｜桃園市八德區大安國民小學｜勞務類｜預算 59 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc4ODE
+- 「影像檔案分析系統建置」採購案｜法務部調查局｜財物類｜預算 95 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTgwMjQ
+- 新竹市虎林國小創思樓四樓結構修復工程委託規劃設計及監造｜新竹市香山區虎林國民小學｜勞務類｜預算 81 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTQ4MzE
+- 「當代藝術與技術論壇」錄影案｜臺北市立美術館｜勞務類｜預算 22 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTczNzA
+- 116年度午餐運輸工作勞務採購｜高雄市鳳山區福誠國民小學｜勞務類｜預算 24 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc1Mzg
+- 智慧學校數位學堂計畫-教室觸屏採購｜桃園市龜山區大湖國民小學｜財物類｜預算 41 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc3NjE
+- 臺中市立新光國民中學116年度三年級會考專車採購｜臺中市立新光國民中學｜勞務類｜預算 22 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY5NTM
+- 116年度資訊安全(C級機關)及資訊設備維護人力駐點服務採購案｜明陽中學｜勞務類｜預算 72 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcwMzY
+- 115年度新世代學習空間統包工程採購案｜臺北市立金華國民中學｜工程類｜預算 145 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTczNTA
+- 宜蘭縣南澳鄉公所115年度補助公立幼兒園充實及改善教學環境設施設備採購案｜宜蘭縣南澳鄉公所｜財物類｜預算 51 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcyOTY
+- 華陵里比該道路支線及主線邊坡設施及環境改善工程｜桃園市復興區公所｜工程類｜預算 128 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc0NzE
+- 霞雲里11鄰庫志道路部落環境及聯外道路改善工程｜桃園市復興區公所｜工程類｜預算 62 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc0NDM
+- 115學年度一二三年級校外教學委託專業服務｜新北市新莊區中港國民小學｜勞務類｜預算 100 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcwNTc
+- 115年體育班服裝及器材裝備｜花蓮縣立美崙國民中學｜財物類｜預算 35 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc5NzE
+- 國立曾文農工116-117學年度學生健康檢查採購案｜國立曾文高級農工職業學校｜勞務類｜預算 55 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc2MzQ
+- 115年度三峽分館、土城親子分館及土城祖田圖書閱覽室公安缺失改善案｜新北市立圖書館｜財物類｜預算 31 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTczODk
+- 3樓會議室設備改善採購｜新北市立中山國民中學｜財物類｜預算 32 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc1MzM
+- 116年度119救災救護指揮中心不斷電系統維護採購案｜臺北市政府消防局｜勞務類｜預算 40 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc5ODk
+- 115-116年大埔國小老舊廁所整修工程(第二批)委託技術服務｜苗栗縣竹南鎮大埔國民小學｜勞務類｜預算 16 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcyODQ
+- 115年度花蓮縣身心障礙學生「親親海洋」育樂營活動｜花蓮縣立花崗國民中學｜勞務類｜預算 58 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTczOTc
+- 115學年度一至五年級戶外教育暨畢業生戶外教育體驗營採購案｜臺中市霧峰區萬豐國民小學｜勞務類｜預算 34 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTgwMzA
+- 115學年度更新二年級學生課桌椅組採購案｜高雄市立國昌國民中學｜財物類｜預算 108 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc5NTk
+- 「差勤刷卡系統」資訊服務採購案｜核能安全委員會｜勞務類｜預算 94 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcxODI
+- 115-117臺灣科學節專案辦公室軟硬體租賃｜國立海洋生物博物館｜財物類｜預算 112 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc2NTI
+- 商用高流量淨水設備及施工工程｜智光學校財團法人新北市智光高級商工職業學校｜財物類｜預算 47 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc2NDI
+- 韌性低碳建築輕質牆測試線夾具一套｜國立雲林科技大學｜財物類｜預算 94 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcyMzM
+- 學生自主學習用短背椅.長背椅財物採購案｜國立頭城高級家事商業職業學校｜財物類｜預算 29 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc4NjY
+- 幼兒園戶外環境改善工程｜臺中市東區成功國民小學｜工程類｜預算 150 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY5NDM
+- 115年度新北市犬隻數量調查｜新北市政府動物保護防疫處｜勞務類｜預算 50 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc2Nzg
+- 115年教學與設備支持計畫-教室桌椅採購案｜臺北市立大學｜財物類｜預算 137 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc2OTk
+- 花蓮縣警察局116年度吉安分局所屬待勤室整修工程委託規劃設計監造｜花蓮縣警察局｜勞務類｜預算 63 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY5NTY
+- 115年度新莊區及五股區各分館公安缺失改善案｜新北市立圖書館｜財物類｜預算 117 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc4MDQ
+- 115學年九年級校外教學活動採購案｜臺中市立霧峰國民中學｜勞務類｜預算 64 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTIyNTk
+- 115年版「關稅海關緝私法令彙編」印製案｜財政部｜勞務類｜預算 33 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTczOTg
+- 115年度校門入口階梯門面處梁柱漆面修補採購案｜臺北市立士林高級商業職業學校｜勞務類｜預算 30 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcwODY
+- 116年度辦公環境清潔委外｜財政部北區國稅局宜蘭分局｜勞務類｜預算 40 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc5NzY
+- 115年度改善偏遠地區國民中小學教師宿舍計畫─修繕工程採購案｜南投縣仁愛鄉發祥國民小學｜工程類｜預算 27 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTYxMzY
+- 116年度資訊安全管理制度維護服務案｜臺中市立美術館｜勞務類｜預算 55 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcyNTc
+- 115年度新世代學習空間資訊設備採購案｜臺北市芳和實驗中學｜財物類｜預算 22 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTczMzA
+- 115學年度第34屆學生畢業紀念冊採購案｜臺中市北屯區文心國民小學｜財物類｜預算 21 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc1Njc
+- 115學年度花蓮縣豐濱鄉新社國民小學校際交流勞務採購案｜花蓮縣豐濱鄉新社國民小學｜勞務類｜預算 25 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTczMDE
+- 115學年學校午餐廚房鍋爐設備更新｜高雄市新興區大同國民小學｜財物類｜預算 27 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc0Mzc
+- 恆電位儀1台｜國立臺北科技大學｜財物類｜預算 37 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc3NjQ
+- 新北市政府家庭暴力暨性侵害防治中心115年員工歲末聯誼餐敘｜新北市政府家庭暴力暨性侵害防治中心｜勞務類｜預算 59 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTQxNjc
+- 施政成果暨大型活動平面整合行銷案｜高雄市政府新聞局｜勞務類｜預算 110 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTc2OTA
+- 115年度改善偏遠地區國民中小學教師宿舍計畫設備財務採購｜苗栗縣泰安鄉象鼻國民小學｜財物類｜預算 29 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTcwNjU
+- Browzine電子期刊全文瀏覽平台暨Data service 1年｜國立陽明交通大學｜財物類｜預算 —｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY1MzI
+- 安樂國小幼兒園電腦設備採購案｜基隆市安樂區安樂國民小學｜財物類｜預算 21 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY4NTE
+- 「115年度特教組身心障礙學生交通車」財物採購案｜國立澎湖高級海事水產職業學校｜財物類｜預算 192 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY0NDU
+- 115年度「原住民自製獵槍安全使用訓練」勞務採購案｜原住民族委員會｜勞務類｜預算 1,141 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY2NDM
+- 115年北回國小老舊廁所整修工程｜嘉義縣水上鄉北回國民小學｜工程類｜預算 343 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTYxODQ
+- 鹿草鄉碧潭村生態農塘美化工程｜農業部農村發展及水土保持署南投分署｜工程類｜預算 226 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTU5ODg
+- TOSHO牌設備維護承攬工作｜國立成功大學醫學院附設醫院｜勞務類｜預算 386 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTU4NTY
+- 115至118年度水電（水材管路及空調）材料開口契約財物採購案｜臺北市政府工務局｜財物類｜預算 777 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY0OTc
+- 海濤園營區防水修繕工程｜國防部政治作戰局｜工程類｜預算 40 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY3MDc
+- 東里國小北棟廁所整修工程｜花蓮縣富里鄉東里國民小學｜工程類｜預算 342 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTYyODk
+- 114-116年公立國民中小學老舊廁所整修工程計畫-雲林國中D棟教學大樓廁所整修工程｜雲林縣立雲林國民中學｜工程類｜預算 247 萬｜截止 2026/10/27｜https://web.pcc.gov.tw/tps/QueryTender/query/searchTenderDetail?pkPmsMain=NzEzNTY2OTE
