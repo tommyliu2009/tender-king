@@ -1,0 +1,11 @@
+body{margin:0;font-family:-apple-system,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;color:#1f2933;background:#f6f7f9;line-height:1.6}
+a{color:#e8590c}.wrap{max-width:1100px;margin:0 auto;padding:0 16px}.top{background:linear-gradient(135deg,#fff4e6,#ffe8cc 55%,#fff9db);border-bottom:1px solid #ffd8a8;padding:14px 0 18px}
+.hd{display:flex;gap:16px;align-items:flex-start;justify-content:space-between}.brand{font-weight:800;color:#e8590c;text-decoration:none;font-size:20px}
+h1{font-size:26px;margin:8px 0 4px}.crumb{font-size:13px;color:#6b7785}.lead{color:#5c4a3a;margin:4px 0 0}
+.ad{flex:0 0 230px;padding:10px 12px;border:2px solid #f08a24;border-radius:12px;background:#fff7ee;text-align:center;line-height:1.5;font-size:14px}.ad b{color:#d2691e}.ad a{color:#d2691e;word-break:break-all}
+.card{background:#fff;border:1px solid #e6e9ee;border-radius:14px;padding:14px 16px;margin:16px 0}h2{font-size:19px;margin:0 0 10px}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:7px 6px;border-bottom:1px solid #eef0f3;text-align:left;vertical-align:top}th{color:#6b7785;font-weight:600;white-space:nowrap}td.n{text-align:right;white-space:nowrap}
+.tags a{display:inline-block;margin:3px 4px 3px 0;padding:3px 10px;border:1px solid #ffd8a8;border-radius:999px;background:#fff;font-size:13px;text-decoration:none}
+.st{font-size:12px;padding:1px 7px;border-radius:999px;background:#e7f5ff;color:#1971c2;white-space:nowrap}.foot{color:#6b7785;font-size:13px;padding:20px 0 40px}
+.btn{display:inline-block;margin-top:8px;padding:8px 16px;border-radius:999px;background:#e8590c;color:#fff;text-decoration:none}
+@media(max-width:760px){.hd{flex-direction:column}.ad{flex:none;width:100%;box-sizing:border-box;order:2}.hd>div:first-child{order:1}h1{font-size:21px}.hide-m{display:none}table{font-size:13px}}

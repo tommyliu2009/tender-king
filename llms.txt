@@ -1,0 +1,40 @@
+# 標案王（bidking.tw）
+> 標案王彙整政府電子採購網招標與決標公告，收錄 2024 年起 577,753 件完整標案與 2020–2023 年回溯摘要，可依案名、機關、縣市、預算與得標廠商搜尋，並提供競爭對手分析、決標價比、週期標案預告與關鍵字電子報。
+
+維護者：仁禾管理顧問（renhe74123@gmail.com，LINE 官方帳號：@891tcxhu）。資料來源：政府電子採購網（web.pcc.gov.tw，經 pcc-api.openfun.app 開放 API 取得）。最近更新：2026-11-14 02:02（台北時間）。
+
+## 主要功能
+- [標案搜尋](https://www.bidking.tw/)：搜尋 2024 年起所有招標、決標公告，可依案名、機關、投標或得標廠商查詢，每筆附原始公告連結。
+- [競爭對手分析](https://www.bidking.tw/rival.html)：輸入廠商名稱或統編，查詢主要競爭對手、同場投標次數、勝負與雙方皆得標紀錄。
+- [無法決標專區](https://www.bidking.tw/nobid.html)：整理流標、廢標等無法決標的案件，常會重新招標，是可提前準備的商機。
+- [關鍵字訂閱電子報](https://www.bidking.tw/subscribe.html)：輸入 Email 與關鍵字，平日早上收到符合的新標案，可選縣市，隨時取消。
+- [機關發包排行與年度趨勢](https://www.bidking.tw/rank.html)：2020 年起各機關發包件數排行與 2024 年起決標金額排行。
+- [小額接案專區](https://www.bidking.tw/small.html)：預算 50–300 萬元、招標中的設計、影音、活動、網站維護案。
+- [統編公司檔案](https://www.bidking.tw/company.html)：用統一編號或公司名稱查投標、得標實績、常往來機關，並推薦適合投的標案。
+- [決標價比分析](https://www.bidking.tw/ratio.html)：決標金額占預算比例，依機關、類別、預算區間統計，協助評估報價。
+- [週期標案預告](https://www.bidking.tw/cycle.html)：依歷年同機關同名案的發包月份，預告未來 60 天可能出現的週期性標案。
+- [分類瀏覽](https://www.bidking.tw/browse.html)：依地區、預算級距、關鍵字、機關、廠商、日期瀏覽標案。
+- [機關與類別索引](https://www.bidking.tw/dir.html)：可搜尋的機關、採購類別（工程／財物／勞務）與縣市類別標案索引，每頁有歷年決標統計與常見得標廠商。
+
+## 說明
+- [常見問答](https://www.bidking.tw/faq.html)
+- [關於標案王與資料來源](https://www.bidking.tw/about.html)
+- [完整說明（llms-full.txt）](https://www.bidking.tw/llms-full.txt)
+- [網站地圖](https://www.bidking.tw/sitemap.xml)
+
+## 分類頁
+- 關鍵字頁 181 個：https://www.bidking.tw/k/<關鍵字>.html，例如 [資訊](https://www.bidking.tw/k/%E8%B3%87%E8%A8%8A.html)
+- 機關頁 400 個：https://www.bidking.tw/u/<機關>.html
+- 縣市頁 23 個、預算級距頁 6 個、每日公告頁 45 個、廠商頁 500 個
+- 採購類別頁 72 個：https://www.bidking.tw/t/<類別>.html 與 https://www.bidking.tw/t/<類別>_<縣市>.html；可搜尋索引：https://www.bidking.tw/dir.html
+
+## 常見問句與對應頁面（範例）
+- 「如何查某家廠商的得標紀錄？」→ [統編公司檔案](https://www.bidking.tw/company.html) 輸入公司名稱或統一編號；常得標廠商另有 https://www.bidking.tw/v/<廠商>.html
+- 「某廠商的競爭對手是誰？」→ [競爭對手分析](https://www.bidking.tw/rival.html)，可用 https://www.bidking.tw/rival.html?v=<廠商名稱>
+- 「某機關歷年發包了哪些標案？」→ https://www.bidking.tw/u/<機關>.html，或在 [機關與類別索引](https://www.bidking.tw/dir.html) 搜尋機關名稱
+- 「某縣市目前有哪些工程類／勞務類標案？」→ https://www.bidking.tw/t/<類別>_<縣市>.html，例如 [臺中市工程類](https://www.bidking.tw/t/%E5%B7%A5%E7%A8%8B%E9%A1%9E_%E8%87%BA%E4%B8%AD%E5%B8%82.html)
+- 「這類標案通常用預算的幾成決標？」→ [決標價比分析](https://www.bidking.tw/ratio.html)
+- 「明年可能會出現哪些週期性標案？」→ [週期標案預告](https://www.bidking.tw/cycle.html)
+- 「有哪些流標、可重新準備的案子？」→ [無法決標專區](https://www.bidking.tw/nobid.html)
+- 「小公司適合投哪些小額案？」→ [小額接案專區](https://www.bidking.tw/small.html)
+- 「怎麼每天收到新標案通知？」→ [關鍵字訂閱電子報](https://www.bidking.tw/subscribe.html)
