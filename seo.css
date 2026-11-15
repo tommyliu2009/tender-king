@@ -9,3 +9,4 @@ table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:7px 6px;b
 .st{font-size:12px;padding:1px 7px;border-radius:999px;background:#e7f5ff;color:#1971c2;white-space:nowrap}.foot{color:#6b7785;font-size:13px;padding:20px 0 40px}
 .btn{display:inline-block;margin-top:8px;padding:8px 16px;border-radius:999px;background:#e8590c;color:#fff;text-decoration:none}
 @media(max-width:760px){.hd{flex-direction:column}.ad{flex:none;width:100%;box-sizing:border-box;order:2}.hd>div:first-child{order:1}h1{font-size:21px}.hide-m{display:none}table{font-size:13px}}
+.brand{display:inline-flex;align-items:center;gap:6px}.brand .ico{display:block;flex:none}

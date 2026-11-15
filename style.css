@@ -123,3 +123,6 @@ select{width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:10
 .fgroup input[type=text]{width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:10px;font-size:14px}
 mark{background:#fff3bf;padding:0 1px}
 .vbox{margin:0 0 12px}.vt{width:100%;border-collapse:collapse;background:#fff;font-size:14px}.vt th,.vt td{border:1px solid #eee;padding:6px 8px;text-align:right}.vt th:first-child,.vt td:first-child{text-align:left}.vt th{background:#fff5ea}.small{font-size:12px}.vend{flex-basis:100%}
+
+.logo{display:inline-flex;align-items:center;line-height:0}
+nav.cats a{display:inline-flex;align-items:center}
